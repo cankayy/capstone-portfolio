@@ -128,3 +128,50 @@ a {
   height: 100%;
   object-fit: cover;
 }
+
+/* Custom cursor (src/cursor.js). White + difference blend reads as black on light areas, white on dark. */
+.has-custom-cursor,
+.has-custom-cursor *,
+.has-custom-cursor ::backdrop {
+  cursor: none !important;
+}
+
+.cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2147483647;
+  width: var(--cursor-size);
+  height: var(--cursor-size);
+  margin: calc(var(--cursor-size) / -2) 0 0 calc(var(--cursor-size) / -2);
+  pointer-events: none;
+  mix-blend-mode: difference;
+  opacity: 0;
+  transition: opacity 0.2s;
+  will-change: transform;
+}
+
+.cursor.is-visible {
+  opacity: 1;
+}
+
+.cursor::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: #fff;
+  transition: transform 0.25s var(--ease-out);
+}
+
+.cursor.is-hover::before {
+  transform: scale(2.2);
+}
+
+.cursor.is-down::before {
+  transform: scale(0.75);
+}
+
+.cursor.is-hover.is-down::before {
+  transform: scale(1.8);
+}
