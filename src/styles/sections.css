@@ -311,6 +311,17 @@
   border-radius: var(--r-img);
 }
 
+/* Plain images (charts, diagrams, photos) fill the column instead of sitting on a padded panel. */
+.cs-feature__media:has(.frame--none) {
+  min-height: 0;
+  padding: 0;
+  background: none;
+}
+
+.cs-feature__media:has(.frame--none) .frame--none {
+  border: 1px solid var(--c-line);
+}
+
 .frame--none .ph {
   aspect-ratio: 4 / 3;
   background: #e6e6e6;
@@ -378,6 +389,14 @@
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 56px 40px;
   margin-top: clamp(40px, 5vw, 72px);
+}
+
+/* Exactly four items: one row of four instead of three plus an orphan. */
+@media (min-width: 900px) {
+  .cs-steps__grid:has(> li:nth-child(4):last-child),
+  .cs-pair__list:has(> li:nth-child(4):last-child) {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
 }
 
 .cs-steps__grid .cs-item-title {

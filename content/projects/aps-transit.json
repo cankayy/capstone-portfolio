@@ -1,5 +1,4 @@
 {
-  "_readme": "First project. Card and intro copy are taken from the screenshots. Everything marked [Placeholder] is filler so every section type renders; replace it with real content using CONTENT_INTAKE.md.",
   "slug": "aps-transit",
   "title": "APS Transit",
   "order": 1,
@@ -12,12 +11,12 @@
     "icon": "/images/aps-transit/icon-pedestrian.svg",
     "summary": "Evaluating 42 signalized intersections in Seattle’s University District, this project finds that Accessible Pedestrian Signals are unevenly distributed and recommends a new APS at NE Campus Parkway and University Way, plus sound adjustments and tone standardization, for about $64,000.",
     "tags": [
-      "Product Management",
+      "Project Management",
       "Information Management"
     ],
     "image": {
-      "src": "/images/aps-transit/card.jpg",
-      "alt": "Pedestrian crossing sign and yellow signal lamp in front of a glass building"
+      "src": "/images/aps-transit/intro.jpg",
+      "alt": "Black signal pole with a “Push button for audible signal” sign above a yellow accessible pedestrian pushbutton"
     }
   },
   "sections": [
@@ -25,114 +24,111 @@
       "type": "intro",
       "banner": {
         "src": "/images/aps-transit/banner.jpg",
-        "alt": "Seattle skyline with the Space Needle and Mount Rainier at dusk"
+        "alt": "Seattle’s University District skyline with autumn trees and the freeway bridge in the foreground"
       },
       "title": "Crosswalks & Signals",
       "summary": "Evaluating 42 signalized intersections in Seattle’s University District, this project finds that Accessible Pedestrian Signals are unevenly distributed and recommends a new APS at NE Campus Parkway and University Way, plus sound adjustments and tone standardization, for about $64,000.",
       "meta": [
         {
           "label": "Role",
-          "value": "Product Manager – Athan"
+          "value": "Athan Cheng, with a team of six"
         },
         {
           "label": "Stage",
-          "value": "Product Manager – Athan"
+          "value": "Research report and recommendations"
         },
         {
           "label": "Platform",
-          "value": "Product Manager – Athan"
+          "value": "Field audit, survey and story analysis"
         },
         {
           "label": "Focus",
-          "value": "Product Manager – Athan"
+          "value": "Project and information management"
         }
       ],
       "image": {
         "src": "/images/aps-transit/intro.jpg",
-        "alt": "Pedestrian crossing sign and yellow signal lamp in front of a glass building"
+        "alt": "Black signal pole with a “Push button for audible signal” sign above a yellow accessible pedestrian pushbutton"
       }
     },
     {
       "type": "overview",
-      "eyebrow": "[Placeholder] Overview",
-      "heading": "[Placeholder] Big statement heading.",
-      "lead": "[Placeholder] Lead paragraph that frames the project.",
+      "eyebrow": "Overview",
+      "heading": "Deciding where accessible signals matter most.",
+      "lead": "Walk signals are visual only, so people who are blind, have low vision or are deaf-blind cannot get crossing information. Accessible Pedestrian Signals (APS) close that gap, but each costs $50,000 and the Seattle Department of Transportation (SDOT) installs only 10 a year citywide. Every installation needs careful prioritization.",
       "pillars": [
         {
-          "title": "[Placeholder] Pillar one",
-          "text": "[Placeholder] One line."
+          "title": "The problem",
+          "text": "APS are costly and scarce, so choosing where they go matters."
         },
         {
-          "title": "[Placeholder] Pillar two",
-          "text": "[Placeholder] One line."
+          "title": "Our focus",
+          "text": "42 signalized intersections across 6 corridors in the University District."
         },
         {
-          "title": "[Placeholder] Pillar three",
-          "text": "[Placeholder] One line."
+          "title": "Our goal",
+          "text": "A prioritized list of intersections to guide SDOT and King County Metro."
         }
       ]
     },
     {
       "type": "feature",
-      "number": "01",
-      "label": "[Placeholder] Label",
-      "heading": "[Placeholder] Italic feature heading.",
-      "body": "[Placeholder] One or two short paragraphs. Separate paragraphs with \\n\\n.",
+      "label": "Context",
+      "heading": "A busy neighborhood that keeps growing.",
+      "body": "The University District (U-District) drew more than 37.5 million visits in 2025, 17.2% above pre-pandemic levels, and pedestrian traffic has risen since the light rail station opened. The area’s population has grown 47% since 2010. As more people walk to transit every day, crossing infrastructure has to keep pace for people with visual, mobility or other disabilities.",
       "bullets": [
-        "[Placeholder] Point one",
-        "[Placeholder] Point two",
-        "[Placeholder] Point three"
-      ],
-      "note": "[Placeholder] Optional small pill note",
-      "media": [
-        {
-          "src": "/images/aps-transit/feature-1.png",
-          "alt": "",
-          "frame": "phone"
-        }
-      ],
-      "side": "right"
+        "37.5 million+ visits in 2025",
+        "Population up 47% since 2010",
+        "4,000+ homes and 3,500+ jobs projected"
+      ]
     },
     {
-      "type": "comparison",
-      "eyebrow": "[Placeholder] Eyebrow",
-      "heading": "[Placeholder] From the old way to the new way.",
-      "lead": "[Placeholder] What changed and why.",
-      "a": {
-        "eyebrow": "[Placeholder] Before",
-        "heading": "[Placeholder] Old approach",
-        "body": "[Placeholder] What it did and where it fell short.",
-        "media": {
-          "src": "/images/aps-transit/before.png",
-          "alt": ""
-        }
+      "type": "image",
+      "media": {
+        "src": "/images/aps-transit/growth-charts.png",
+        "alt": "Two charts: annual U-District visits rising from 22M in 2020 to 37.4M in 2025, and U-District population growth since 2010 (147%) outpacing Seattle (134%) and King County (125%)"
       },
-      "b": {
-        "eyebrow": "[Placeholder] After",
-        "heading": "[Placeholder] New approach",
-        "body": "[Placeholder] What it does now.",
-        "media": {
-          "src": "/images/aps-transit/after.png",
-          "alt": ""
-        }
-      }
+      "caption": "Annual U-District visits (Placer.ai, 2019–2025) and resident population growth since 2010 (Washington State OFM SAEP 2025), from the 2026 U-District Economic Report."
     },
     {
-      "type": "steps",
-      "eyebrow": "[Placeholder] How it works",
-      "intro": "[Placeholder] One sentence describing the process.",
-      "steps": [
+      "type": "media-pair",
+      "eyebrow": "Approach & method",
+      "heading": "We paired street data with community voices.",
+      "lead": "We audited the blocks around the U-District light rail station, a major point of entry to the area, and focused on intersections rather than sidewalks at large. A survey and a review of published stories connected what we measured to how people experience these crossings.",
+      "items": [
         {
-          "title": "[Placeholder] Step one",
-          "text": "[Placeholder] One line."
+          "image": {
+            "src": "/images/aps-transit/aps-map.jpg",
+            "alt": "Map of the study area around the light rail line, marking intersections with active accessible pedestrian signals"
+          },
+          "caption": "APS availability in the study area: 11 of 42 intersections had audible signals and 31 had none.",
+          "width": 1
         },
         {
-          "title": "[Placeholder] Step two",
-          "text": "[Placeholder] One line."
+          "image": {
+            "src": "/images/aps-transit/field-audit-sheet.jpg",
+            "alt": "Field audit spreadsheet listing each intersection with checkboxes for zebra stripes and tactile strips, curb ramp notes and surface obstacles"
+          },
+          "caption": "Our field audit spreadsheet recorded Americans with Disabilities Act (ADA) features and surface notes at every intersection.",
+          "width": 1.8
+        }
+      ],
+      "list": [
+        {
+          "title": "Field audit",
+          "text": "Recorded crossing features at all 42 intersections."
         },
         {
-          "title": "[Placeholder] Step three",
-          "text": "[Placeholder] One line."
+          "title": "Decibel readings",
+          "text": "Measured walk and non-walk sound levels at APS intersections."
+        },
+        {
+          "title": "Community survey",
+          "text": "45 responses, shared on moderated subreddits, Nextdoor and at local disability centers."
+        },
+        {
+          "title": "StoryMap analysis",
+          "text": "Coded 33 of 270 Disability Rights Washington stories."
         }
       ]
     },
@@ -140,126 +136,180 @@
       "type": "split",
       "columns": [
         {
-          "eyebrow": "[Placeholder] Side A",
-          "heading": "[Placeholder] What side A owns",
-          "body": "[Placeholder] Short paragraph."
+          "eyebrow": "Data quality",
+          "heading": "Built for reliability and validity",
+          "body": "Standardized instructions and deductive codes supported consistent ratings across the team. We drew on primary data, secondary data and literature, and wrote survey questions and analyses that ask about infrastructure gaps and accessibility harms together."
         },
         {
-          "eyebrow": "[Placeholder] Side B",
-          "heading": "[Placeholder] What side B owns",
-          "body": "[Placeholder] Short paragraph."
+          "eyebrow": "Data ethics",
+          "heading": "Anonymous, aggregate and public only",
+          "body": "Survey submissions were anonymous, with full disclosure of how data would be used, and results are shown only in aggregate. Decibel readings captured sound levels in public spaces, never the sounds themselves."
         }
       ]
     },
     {
-      "type": "gallery",
-      "eyebrow": "[Placeholder] Design system",
-      "heading": "[Placeholder] Heading about the visual work.",
-      "lead": "[Placeholder] Lead paragraph.",
-      "tiles": [
-        {
-          "label": "[Placeholder] Tile label",
-          "caption": "[Placeholder] ComponentName",
-          "image": {
-            "src": "",
-            "alt": ""
-          },
-          "dark": false
-        },
-        {
-          "label": "[Placeholder] Tile label",
-          "caption": "",
-          "image": {
-            "src": "",
-            "alt": ""
-          },
-          "dark": true
+      "type": "comparison",
+      "eyebrow": "Field observations",
+      "heading": "What a poor crossing looks like next to a good one.",
+      "lead": "While collecting data, the team documented intersections at both ends of what we found.",
+      "a": {
+        "eyebrow": "Poor example",
+        "heading": "43rd and 12th Ave",
+        "body": "Worn zebra stripes, curb ramp corners completely level with the road, and no APS despite busy one-way traffic.",
+        "media": {
+          "src": "/images/aps-transit/bad-intersection.jpg",
+          "alt": "Intersection of 43rd and 12th Ave with traffic signals, a bus and construction barrels, but no accessible signal"
         }
-      ]
-    },
-    {
-      "type": "media-pair",
-      "eyebrow": "[Placeholder] Tools",
-      "heading": "[Placeholder] Heading.",
-      "lead": "[Placeholder] Lead paragraph.",
-      "items": [
-        {
-          "image": {
-            "src": "",
-            "alt": ""
-          },
-          "caption": "[Placeholder] Caption for left image.",
-          "width": 2
-        },
-        {
-          "image": {
-            "src": "",
-            "alt": ""
-          },
-          "caption": "[Placeholder] Caption for right image.",
-          "width": 1
+      },
+      "b": {
+        "eyebrow": "Good example",
+        "heading": "45th and 11th Ave",
+        "body": "Clear zebra stripes, tactile strips on curb ramps that alert pedestrians with low vision, an integrated APS with directional indications, and dedicated bike paths.",
+        "media": {
+          "src": "/images/aps-transit/good-intersection.jpg",
+          "alt": "Intersection of 45th and 11th Ave with bright zebra-striped crosswalks, green bike lanes and a trolleybus"
         }
-      ],
-      "list": [
-        {
-          "title": "[Placeholder] Item one",
-          "text": "[Placeholder] One line."
-        },
-        {
-          "title": "[Placeholder] Item two",
-          "text": "[Placeholder] One line."
-        },
-        {
-          "title": "[Placeholder] Item three",
-          "text": "[Placeholder] One line."
-        }
-      ]
-    },
-    {
-      "type": "architecture",
-      "eyebrow": "[Placeholder] Architecture",
-      "heading": "[Placeholder] How the pieces fit.",
-      "lead": "[Placeholder] Lead paragraph.",
-      "tools": [
-        "[Placeholder] Figma",
-        "[Placeholder] React",
-        "[Placeholder] Firebase"
-      ],
-      "flow": [
-        {
-          "eyebrow": "[Placeholder] Layer",
-          "title": "[Placeholder] Part one",
-          "text": "[Placeholder] One line."
-        },
-        {
-          "eyebrow": "[Placeholder] Layer",
-          "title": "[Placeholder] Part two",
-          "text": "[Placeholder] One line."
-        },
-        {
-          "eyebrow": "[Placeholder] Layer",
-          "title": "[Placeholder] Part three",
-          "text": "[Placeholder] One line."
-        }
-      ],
-      "status": {
-        "label": "[Placeholder] Status label",
-        "text": "[Placeholder] Short status note."
       }
     },
     {
-      "type": "text",
-      "eyebrow": "[Placeholder] Eyebrow",
-      "heading": "[Placeholder] Fallback heading.",
-      "body": "[Placeholder] Paragraphs separated by \\n\\n."
+      "type": "feature",
+      "number": "01",
+      "label": "Coverage",
+      "heading": "Signals are missing where people walk most.",
+      "body": "APS coverage is concentrated on Roosevelt Way and 15th Avenue, leaving much of the U-District interior under-served. University Way (The Ave), the neighborhood’s busiest pedestrian corridor, lacks substantial coverage. Campus Parkway, a major route to and from the University of Washington, has only one APS signal.",
+      "bullets": [
+        "Only 11 of 42 intersections have APS",
+        "45th & University Way flagged most often",
+        "12 respondents fear crossing U-District streets"
+      ],
+      "media": [
+        {
+          "src": "/images/aps-transit/aps-coverage-diagram.png",
+          "alt": "Street grid diagram from Roosevelt to 15th Ave NE and NE 47th St to Campus Parkway, marking existing APS and recommended or modified signals",
+          "frame": "none"
+        }
+      ]
     },
     {
-      "type": "image",
-      "media": {
-        "src": "",
-        "alt": ""
-      },
-      "caption": "[Placeholder] Optional caption."
+      "type": "feature",
+      "number": "02",
+      "label": "Sound",
+      "heading": "Some signals were quieter than the street.",
+      "body": "We measured sound at shoulder height, 4 to 6 feet from each APS, during walk and non-walk phases, using the intersection’s ambient noise as the baseline. Most signals rose above traffic, but at three intersections the APS was quieter than the baseline. Tones also varied: some name the intersection or direction, while others only say “crossing.”",
+      "bullets": [
+        "Consistent, comparative sampling method",
+        "3 signals below ambient noise",
+        "Tones not standardized"
+      ],
+      "media": [
+        {
+          "src": "/images/aps-transit/decibel-chart.png",
+          "alt": "Bar chart of baseline versus APS sound energy in decibels at eight intersections; at 47th & 15th, 45th & 15th and 43rd & 15th the APS is quieter than the baseline",
+          "frame": "none"
+        }
+      ]
+    },
+    {
+      "type": "feature",
+      "number": "03",
+      "label": "Survey",
+      "heading": "People who rely on APS say it helps.",
+      "body": "In our survey, 40% rated audible or vibrating walk signals very helpful and 28% at least somewhat helpful, which points to a genuine need, not just a preference. Thirteen respondents named a specific unsafe intersection, and field observations confirmed that none of them had an audible signal. Open responses pointed to dangerous turns, short walk signals and poor signage.",
+      "bullets": [
+        "Wanted: more APS coverage",
+        "Wanted: longer crossing phases",
+        "Wanted: more frequent buses",
+        "Wanted: real-time arrival information"
+      ],
+      "media": [
+        {
+          "src": "/images/aps-transit/survey-helpfulness.png",
+          "alt": "Bar chart of 43 responses on how helpful audible or vibrating walk signals are: 17 very helpful (40%), 8 moderately (19%), 12 somewhat (28%), 6 not helpful at all (14%)",
+          "frame": "none"
+        }
+      ]
+    },
+    {
+      "type": "feature",
+      "number": "04",
+      "label": "Equity",
+      "heading": "Small gaps compound into equity problems.",
+      "body": "Our StoryMap analysis linked safety concerns to missing signals, negligent drivers, dark conditions, poor sidewalks and obstacles. These issues amplify each other: unreliable buses push people to walk, which exposes them to more crossing barriers. With 72% of respondents riding transit daily or several times a week, these failures are recurring exposures, not occasional inconveniences.",
+      "bullets": [
+        "270 stories, 33 analyzed",
+        "8 themes, 37 codes, 136 quotes"
+      ],
+      "media": [
+        {
+          "src": "/images/aps-transit/compounding-problems.jpg",
+          "alt": "Concept map connecting issues such as lack of signals, negligent drivers, sidewalks and dark at night to avoiding public transit, shaded by how often each appeared",
+          "frame": "none"
+        }
+      ]
+    },
+    {
+      "type": "overview",
+      "eyebrow": "Recommendation 1",
+      "heading": "One new signal and better sound at eleven more.",
+      "lead": "Install a new APS at NE Campus Parkway and University Way, adjust volumes at 15th and 43rd, 15th and 45th, and 15th and 47th, and standardize tones across all 11 intersections with an existing APS. Total estimated cost: $64,000.",
+      "pillars": [
+        {
+          "title": "$50,000",
+          "text": "One new APS at NE Campus Parkway and University Way."
+        },
+        {
+          "title": "$3,000",
+          "text": "Volume adjustments at 12 corners across 3 intersections."
+        },
+        {
+          "title": "$11,000",
+          "text": "Tone standardization at 44 corners across 11 intersections."
+        },
+        {
+          "title": "How we estimated",
+          "text": "City of Seattle’s reported APS rate, and $250 per corner from 4–5 hours of crew chief time at $61.15 an hour."
+        }
+      ]
+    },
+    {
+      "type": "steps",
+      "eyebrow": "Proposed timeline",
+      "intro": "We planned the work in four segments over 9 to 12 months, subject to SDOT review and funding.",
+      "steps": [
+        {
+          "title": "0–2 months",
+          "text": "Validate costs and confirm field conditions with SDOT."
+        },
+        {
+          "title": "2–6 months",
+          "text": "Install the new APS at NE Campus Parkway and University Way."
+        },
+        {
+          "title": "6–9 months",
+          "text": "Standardize tones across the 11 existing APS intersections."
+        },
+        {
+          "title": "9–12 months",
+          "text": "Adjust volumes at 3 intersections, 12 corners."
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "eyebrow": "Recommendation 2",
+      "heading": "Share accessibility data across agencies.",
+      "body": "Stronger communication across SDOT, King County Metro and Sound Transit is essential to accessible transit in the U-District. An unexpected reroute is more than an inconvenience for disabled riders if the alternative lacks accessible infrastructure. It can leave them stranded. Mitigation plans only work when they are widely known and consistently applied.\n\nDecision makers need direct visibility into accessibility gaps, and that data should flow across teams instead of staying inside one department. When information stays siloed, gaps persist not because solutions are unavailable, but because the right people never see the problem."
+    },
+    {
+      "type": "text",
+      "eyebrow": "Limitations",
+      "heading": "What we would strengthen next time.",
+      "body": "Decibel readings were taken once, on a weekday afternoon. The survey reached only people who responded to online requests, not every question was required, and late outreach relied mostly on word of mouth. Our thematic coding covered 33 of 270 StoryMap stories, scoped to public transit concerns, so more patterns remain to be found."
+    },
+    {
+      "type": "text",
+      "eyebrow": "Team",
+      "body": "IMT 570, Group 5: Brad Bomberry, Lincoln Brennan, Athan Cheng, Victor Maciel, Waleed Peracha and Nishant Powale."
     }
   ]
 }
