@@ -41,6 +41,7 @@
   color: #333;
   font-size: clamp(14px, 1.1vw, 16px);
   text-decoration: none;
+  white-space: nowrap;
   transition: background-color 0.15s;
 }
 
@@ -334,6 +335,19 @@
     padding: 10px 10px;
   }
 
+  .site-nav__list {
+    padding: 3px 4px;
+  }
+}
+
+@media (max-width: 399.98px) {
+  .site-nav a {
+    padding: 9px 8px;
+    font-size: 13.5px;
+  }
+}
+
+@media (max-width: 639.98px) {
   .projects__filters {
     flex-wrap: nowrap;
     overflow-x: auto;
