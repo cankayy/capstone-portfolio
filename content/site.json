@@ -11,9 +11,8 @@
     },
     {
       "label": "Team Resume",
-      "href": "#",
-      "external": true,
-      "_todo": "Replace with resume URL or /team-resume.pdf"
+      "href": "/team-resume.pdf",
+      "external": true
     }
   ],
   "filters": [

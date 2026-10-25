@@ -30,7 +30,8 @@ Missing images show a gray box with their alt text (and the missing path), so ga
 
 | Path | What |
 |---|---|
-| `content/site.json` | Tagline, nav links, Team Resume URL, filter labels, footer emails |
+| `content/site.json` | Tagline, nav links, filter labels, footer emails |
+| `public/team-resume.pdf` | Team resume opened by the Team Resume nav link (replace the file to update it) |
 | `content/projects/*.json` | One file per project |
 | `public/logo.png` | Wolf logo (also used as the favicon) |
 | `src/grid.js` | Hero grid animation. Tune it in the `CFG` object |
