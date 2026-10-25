@@ -1,0 +1,158 @@
+{
+  "_readme": "Placeholder project so the list, filters and modal can be tested. Replace with real content using CONTENT_INTAKE.md.",
+  "slug": "cheerful-ai",
+  "title": "Cheerful AI",
+  "order": 4,
+  "categories": [
+    "Front-End Development",
+    "UX/UI Design"
+  ],
+  "card": {
+    "shortName": "Cheerful",
+    "summary": "[Placeholder] Two to four sentences about Cheerful AI: what the team studied or built, and the main outcome.",
+    "tags": [
+      "Front-End Development",
+      "AI"
+    ],
+    "image": {
+      "src": "",
+      "alt": "Cheerful AI cover image"
+    }
+  },
+  "sections": [
+    {
+      "type": "intro",
+      "banner": {
+        "src": "",
+        "alt": "Cheerful AI banner image"
+      },
+      "title": "Cheerful AI",
+      "summary": "[Placeholder] One paragraph summary of the project, the problem it addresses and the result.",
+      "meta": [
+        {
+          "label": "Role",
+          "value": "[Placeholder] Value"
+        },
+        {
+          "label": "Stage",
+          "value": "[Placeholder] Value"
+        },
+        {
+          "label": "Platform",
+          "value": "[Placeholder] Value"
+        },
+        {
+          "label": "Focus",
+          "value": "[Placeholder] Value"
+        }
+      ],
+      "image": {
+        "src": "",
+        "alt": "Cheerful AI hero image"
+      }
+    },
+    {
+      "type": "overview",
+      "eyebrow": "Overview",
+      "heading": "[Placeholder] What this project set out to do.",
+      "lead": "[Placeholder] Lead paragraph that frames the project.",
+      "pillars": [
+        {
+          "title": "[Placeholder] Discover",
+          "text": "[Placeholder] One line."
+        },
+        {
+          "title": "[Placeholder] Define",
+          "text": "[Placeholder] One line."
+        },
+        {
+          "title": "[Placeholder] Deliver",
+          "text": "[Placeholder] One line."
+        },
+        {
+          "title": "[Placeholder] Measure",
+          "text": "[Placeholder] One line."
+        }
+      ]
+    },
+    {
+      "type": "comparison",
+      "eyebrow": "Redesign",
+      "heading": "[Placeholder] From the old flow to the new one.",
+      "lead": "[Placeholder] What changed and why.",
+      "a": {
+        "eyebrow": "Before",
+        "heading": "[Placeholder] Old flow",
+        "body": "[Placeholder] Where it fell short.",
+        "media": {
+          "src": "",
+          "alt": "Old flow screenshot"
+        }
+      },
+      "b": {
+        "eyebrow": "After",
+        "heading": "[Placeholder] New flow",
+        "body": "[Placeholder] What it does now.",
+        "media": {
+          "src": "",
+          "alt": "New flow screenshot"
+        }
+      }
+    },
+    {
+      "type": "feature",
+      "number": "01",
+      "label": "[Placeholder] Label",
+      "heading": "[Placeholder] A short feature heading.",
+      "body": "[Placeholder] One or two short paragraphs explaining this finding or deliverable.",
+      "bullets": [
+        "[Placeholder] Point one",
+        "[Placeholder] Point two"
+      ],
+      "media": [
+        {
+          "src": "",
+          "alt": "Screen 1",
+          "frame": "phone"
+        }
+      ],
+      "side": "left"
+    },
+    {
+      "type": "architecture",
+      "eyebrow": "Architecture",
+      "heading": "[Placeholder] How the pieces fit.",
+      "lead": "[Placeholder] Lead paragraph.",
+      "tools": [
+        "[Placeholder] React",
+        "[Placeholder] Node",
+        "[Placeholder] Postgres"
+      ],
+      "flow": [
+        {
+          "eyebrow": "Client",
+          "title": "[Placeholder] Web app",
+          "text": "[Placeholder] One line."
+        },
+        {
+          "eyebrow": "Server",
+          "title": "[Placeholder] API",
+          "text": "[Placeholder] One line."
+        },
+        {
+          "eyebrow": "Data",
+          "title": "[Placeholder] Database",
+          "text": "[Placeholder] One line."
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "media": {
+        "src": "",
+        "alt": "Final product screenshot"
+      },
+      "caption": "[Placeholder] Caption."
+    }
+  ]
+}

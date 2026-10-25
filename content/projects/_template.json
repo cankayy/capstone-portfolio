@@ -1,0 +1,156 @@
+{
+  "_readme": "Template for one project. Files starting with _ are ignored by the site. Copy this file, rename it to <slug>.json, delete sections you don't need, reorder freely. Every field except section 'type' is optional. Keys starting with _ are notes and are ignored by the renderer. Image paths are relative to /public.",
+
+  "slug": "project-slug",
+  "title": "Project Title",
+  "order": 1,
+  "categories": ["Product Definition", "User Research", "UX/UI Design", "Front-End Development"],
+
+  "card": {
+    "_note": "Shown on the homepage card when this project is active in the list.",
+    "shortName": "Short name",
+    "icon": "/images/project-slug/icon.svg",
+    "summary": "Two to four sentences. What the project is and the main outcome.",
+    "tags": ["Product Management", "Information Management"],
+    "image": { "src": "/images/project-slug/card.jpg", "alt": "Describe the image" }
+  },
+
+  "sections": [
+    {
+      "type": "intro",
+      "_note": "Always first. Top of the modal (reference 02).",
+      "banner": { "src": "/images/project-slug/banner.jpg", "alt": "" },
+      "title": "Modal title in italic",
+      "summary": "One paragraph summary.",
+      "meta": [
+        { "label": "Role", "value": "Who did what" },
+        { "label": "Stage", "value": "Research / Prototype / Shipped" },
+        { "label": "Platform", "value": "Web / iOS / Physical" },
+        { "label": "Focus", "value": "One-line focus" }
+      ],
+      "image": { "src": "/images/project-slug/intro.jpg", "alt": "" }
+    },
+
+    {
+      "type": "overview",
+      "eyebrow": "Overview",
+      "heading": "Big statement heading.",
+      "lead": "Lead paragraph that frames the project.",
+      "pillars": [
+        { "title": "Pillar one", "text": "One line." },
+        { "title": "Pillar two", "text": "One line." },
+        { "title": "Pillar three", "text": "One line." }
+      ]
+    },
+
+    {
+      "type": "feature",
+      "_note": "Repeat for each key finding, feature or deliverable. 'side' = where the media goes: 'left' | 'right'. Omit to auto-alternate.",
+      "number": "01",
+      "label": "Label",
+      "heading": "Italic feature heading.",
+      "body": "One or two short paragraphs. Separate paragraphs with \\n\\n.",
+      "bullets": ["Point one", "Point two", "Point three"],
+      "note": "Optional small pill note",
+      "media": [
+        { "src": "/images/project-slug/feature-1.png", "alt": "", "frame": "phone" }
+      ],
+      "_media_frame_options": "phone | browser | none. 'phone' and 'browser' add a device frame. Up to 2 media items.",
+      "side": "right"
+    },
+
+    {
+      "type": "comparison",
+      "eyebrow": "Eyebrow",
+      "heading": "From the old way to the new way.",
+      "lead": "What changed and why.",
+      "a": {
+        "eyebrow": "Before",
+        "heading": "Old approach",
+        "body": "What it did and where it fell short.",
+        "media": { "src": "/images/project-slug/before.png", "alt": "" }
+      },
+      "b": {
+        "eyebrow": "After",
+        "heading": "New approach",
+        "body": "What it does now.",
+        "media": { "src": "/images/project-slug/after.png", "alt": "" }
+      }
+    },
+
+    {
+      "type": "steps",
+      "_note": "Only for real sequences (process, method, timeline).",
+      "eyebrow": "How it works",
+      "intro": "One sentence describing the process.",
+      "steps": [
+        { "title": "Step one", "text": "One line." },
+        { "title": "Step two", "text": "One line." },
+        { "title": "Step three", "text": "One line." }
+      ]
+    },
+
+    {
+      "type": "split",
+      "columns": [
+        { "eyebrow": "Side A", "heading": "What side A owns", "body": "Short paragraph." },
+        { "eyebrow": "Side B", "heading": "What side B owns", "body": "Short paragraph." }
+      ]
+    },
+
+    {
+      "type": "gallery",
+      "eyebrow": "Design system",
+      "heading": "Heading about the visual work.",
+      "lead": "Lead paragraph.",
+      "tiles": [
+        { "label": "Tile label", "caption": "ComponentName", "image": { "src": "", "alt": "" }, "dark": false },
+        { "label": "Tile label", "caption": "", "image": { "src": "", "alt": "" }, "dark": true }
+      ]
+    },
+
+    {
+      "type": "media-pair",
+      "eyebrow": "Tools",
+      "heading": "Heading.",
+      "lead": "Lead paragraph.",
+      "items": [
+        { "image": { "src": "", "alt": "" }, "caption": "Caption for left image.", "width": 2 },
+        { "image": { "src": "", "alt": "" }, "caption": "Caption for right image.", "width": 1 }
+      ],
+      "_width_note": "Relative widths (grid fr units).",
+      "list": [
+        { "title": "Item one", "text": "One line." },
+        { "title": "Item two", "text": "One line." },
+        { "title": "Item three", "text": "One line." }
+      ]
+    },
+
+    {
+      "type": "architecture",
+      "eyebrow": "Architecture",
+      "heading": "How the pieces fit.",
+      "lead": "Lead paragraph.",
+      "tools": ["Figma", "React", "Firebase"],
+      "flow": [
+        { "eyebrow": "Layer", "title": "Part one", "text": "One line." },
+        { "eyebrow": "Layer", "title": "Part two", "text": "One line." },
+        { "eyebrow": "Layer", "title": "Part three", "text": "One line." }
+      ],
+      "status": { "label": "Status label", "text": "Short status note." }
+    },
+
+    {
+      "type": "text",
+      "eyebrow": "Eyebrow",
+      "heading": "Fallback heading.",
+      "body": "Paragraphs separated by \\n\\n."
+    },
+
+    {
+      "type": "image",
+      "media": { "src": "", "alt": "" },
+      "caption": "Optional caption."
+    }
+  ]
+}

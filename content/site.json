@@ -1,0 +1,35 @@
+{
+  "tagline": "We *define* the product, *learn* from users, *design* every screen, and *ship* it in code.",
+  "nav": [
+    {
+      "label": "Projects",
+      "href": "#projects"
+    },
+    {
+      "label": "Contact",
+      "href": "#contact"
+    },
+    {
+      "label": "Team Resume",
+      "href": "#",
+      "external": true,
+      "_todo": "Replace with resume URL or /team-resume.pdf"
+    }
+  ],
+  "filters": [
+    "All Projects",
+    "Product Definition",
+    "User Research",
+    "UX/UI Design",
+    "Front-End Development"
+  ],
+  "footer": {
+    "heading": "Get in touch",
+    "emails": [
+      "athanc@uw.edu",
+      "c4nnkayy@uw.edu",
+      "hchang42@uw.edu",
+      "jserra2@uw.edu"
+    ]
+  }
+}

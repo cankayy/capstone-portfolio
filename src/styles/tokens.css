@@ -1,0 +1,50 @@
+/* Design tokens. Values were measured from docs/reference/*.png; tune them here. */
+:root {
+  /* TODO: confirm the exact family from the team's Figma file (loaded in index.html). */
+  --font-sans: "Figtree", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+
+  /* Color */
+  --c-bg: #fff;
+  --c-text: #111;
+  --c-strong: #000;
+  --c-muted: #555;
+  --c-tagline: #595959;         /* hero tagline, kept dark enough for WCAG AA */
+  --c-tagline-strong: #333;
+  --c-line: #e5e5e5;
+  --c-soft: #f2f2f2;            /* nav pill, soft media panels */
+  --c-tile: #efeeec;            /* gallery tiles */
+  --c-tile-dark: #1e1e1e;
+  --c-placeholder: #e9e9e9;
+  --c-footer: #000;
+  --c-backdrop: rgb(0 0 0 / 0.45);
+
+  /* Shape */
+  --r-pill: 999px;
+  --r-card: 24px;
+  --r-img: 20px;
+  --r-footer: 40px;
+
+  /* Layout */
+  --page-max: 1580px;
+  --gutter: clamp(20px, 10.5vw, 210px);  /* content column inset; 210px at the 2000px reference */
+  --edge: clamp(20px, 3vw, 60px);        /* header and footer inset */
+  --modal-max: 1240px;
+  --modal-pad: clamp(20px, 5.3vw, 66px);
+  --text-max: 840px;
+  --section-gap: clamp(72px, 10vw, 136px);
+
+  /* Type scale */
+  --fs-tagline: clamp(26px, 2.8vw, 40px);
+  --fs-ptitle: clamp(40px, 5.2vw, 72px);
+  --fs-display: clamp(34px, 4.6vw, 60px);   /* case study section headings */
+  --fs-display-md: clamp(30px, 3.4vw, 44px);
+  --fs-modal-title: clamp(36px, 3.6vw, 48px);
+  --fs-lead: clamp(18px, 1.6vw, 21px);
+  --fs-body: 16px;
+  --fs-small: 14px;
+  --fs-label: 12px;
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.2, 0.7, 0.2, 1);
+}

@@ -1,0 +1,265 @@
+{
+  "_readme": "First project. Card and intro copy are taken from the screenshots. Everything marked [Placeholder] is filler so every section type renders; replace it with real content using CONTENT_INTAKE.md.",
+  "slug": "aps-transit",
+  "title": "APS Transit",
+  "order": 1,
+  "categories": [
+    "Product Definition",
+    "User Research"
+  ],
+  "card": {
+    "shortName": "APS",
+    "icon": "/images/aps-transit/icon-pedestrian.svg",
+    "summary": "Evaluating 42 signalized intersections in Seattle’s University District, this project finds that Accessible Pedestrian Signals are unevenly distributed and recommends a new APS at NE Campus Parkway and University Way, plus sound adjustments and tone standardization, for about $64,000.",
+    "tags": [
+      "Product Management",
+      "Information Management"
+    ],
+    "image": {
+      "src": "/images/aps-transit/card.jpg",
+      "alt": "Pedestrian crossing sign and yellow signal lamp in front of a glass building"
+    }
+  },
+  "sections": [
+    {
+      "type": "intro",
+      "banner": {
+        "src": "/images/aps-transit/banner.jpg",
+        "alt": "Seattle skyline with the Space Needle and Mount Rainier at dusk"
+      },
+      "title": "Crosswalks & Signals",
+      "summary": "Evaluating 42 signalized intersections in Seattle’s University District, this project finds that Accessible Pedestrian Signals are unevenly distributed and recommends a new APS at NE Campus Parkway and University Way, plus sound adjustments and tone standardization, for about $64,000.",
+      "meta": [
+        {
+          "label": "Role",
+          "value": "Product Manager – Athan"
+        },
+        {
+          "label": "Stage",
+          "value": "Product Manager – Athan"
+        },
+        {
+          "label": "Platform",
+          "value": "Product Manager – Athan"
+        },
+        {
+          "label": "Focus",
+          "value": "Product Manager – Athan"
+        }
+      ],
+      "image": {
+        "src": "/images/aps-transit/intro.jpg",
+        "alt": "Pedestrian crossing sign and yellow signal lamp in front of a glass building"
+      }
+    },
+    {
+      "type": "overview",
+      "eyebrow": "[Placeholder] Overview",
+      "heading": "[Placeholder] Big statement heading.",
+      "lead": "[Placeholder] Lead paragraph that frames the project.",
+      "pillars": [
+        {
+          "title": "[Placeholder] Pillar one",
+          "text": "[Placeholder] One line."
+        },
+        {
+          "title": "[Placeholder] Pillar two",
+          "text": "[Placeholder] One line."
+        },
+        {
+          "title": "[Placeholder] Pillar three",
+          "text": "[Placeholder] One line."
+        }
+      ]
+    },
+    {
+      "type": "feature",
+      "number": "01",
+      "label": "[Placeholder] Label",
+      "heading": "[Placeholder] Italic feature heading.",
+      "body": "[Placeholder] One or two short paragraphs. Separate paragraphs with \\n\\n.",
+      "bullets": [
+        "[Placeholder] Point one",
+        "[Placeholder] Point two",
+        "[Placeholder] Point three"
+      ],
+      "note": "[Placeholder] Optional small pill note",
+      "media": [
+        {
+          "src": "/images/aps-transit/feature-1.png",
+          "alt": "",
+          "frame": "phone"
+        }
+      ],
+      "side": "right"
+    },
+    {
+      "type": "comparison",
+      "eyebrow": "[Placeholder] Eyebrow",
+      "heading": "[Placeholder] From the old way to the new way.",
+      "lead": "[Placeholder] What changed and why.",
+      "a": {
+        "eyebrow": "[Placeholder] Before",
+        "heading": "[Placeholder] Old approach",
+        "body": "[Placeholder] What it did and where it fell short.",
+        "media": {
+          "src": "/images/aps-transit/before.png",
+          "alt": ""
+        }
+      },
+      "b": {
+        "eyebrow": "[Placeholder] After",
+        "heading": "[Placeholder] New approach",
+        "body": "[Placeholder] What it does now.",
+        "media": {
+          "src": "/images/aps-transit/after.png",
+          "alt": ""
+        }
+      }
+    },
+    {
+      "type": "steps",
+      "eyebrow": "[Placeholder] How it works",
+      "intro": "[Placeholder] One sentence describing the process.",
+      "steps": [
+        {
+          "title": "[Placeholder] Step one",
+          "text": "[Placeholder] One line."
+        },
+        {
+          "title": "[Placeholder] Step two",
+          "text": "[Placeholder] One line."
+        },
+        {
+          "title": "[Placeholder] Step three",
+          "text": "[Placeholder] One line."
+        }
+      ]
+    },
+    {
+      "type": "split",
+      "columns": [
+        {
+          "eyebrow": "[Placeholder] Side A",
+          "heading": "[Placeholder] What side A owns",
+          "body": "[Placeholder] Short paragraph."
+        },
+        {
+          "eyebrow": "[Placeholder] Side B",
+          "heading": "[Placeholder] What side B owns",
+          "body": "[Placeholder] Short paragraph."
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "eyebrow": "[Placeholder] Design system",
+      "heading": "[Placeholder] Heading about the visual work.",
+      "lead": "[Placeholder] Lead paragraph.",
+      "tiles": [
+        {
+          "label": "[Placeholder] Tile label",
+          "caption": "[Placeholder] ComponentName",
+          "image": {
+            "src": "",
+            "alt": ""
+          },
+          "dark": false
+        },
+        {
+          "label": "[Placeholder] Tile label",
+          "caption": "",
+          "image": {
+            "src": "",
+            "alt": ""
+          },
+          "dark": true
+        }
+      ]
+    },
+    {
+      "type": "media-pair",
+      "eyebrow": "[Placeholder] Tools",
+      "heading": "[Placeholder] Heading.",
+      "lead": "[Placeholder] Lead paragraph.",
+      "items": [
+        {
+          "image": {
+            "src": "",
+            "alt": ""
+          },
+          "caption": "[Placeholder] Caption for left image.",
+          "width": 2
+        },
+        {
+          "image": {
+            "src": "",
+            "alt": ""
+          },
+          "caption": "[Placeholder] Caption for right image.",
+          "width": 1
+        }
+      ],
+      "list": [
+        {
+          "title": "[Placeholder] Item one",
+          "text": "[Placeholder] One line."
+        },
+        {
+          "title": "[Placeholder] Item two",
+          "text": "[Placeholder] One line."
+        },
+        {
+          "title": "[Placeholder] Item three",
+          "text": "[Placeholder] One line."
+        }
+      ]
+    },
+    {
+      "type": "architecture",
+      "eyebrow": "[Placeholder] Architecture",
+      "heading": "[Placeholder] How the pieces fit.",
+      "lead": "[Placeholder] Lead paragraph.",
+      "tools": [
+        "[Placeholder] Figma",
+        "[Placeholder] React",
+        "[Placeholder] Firebase"
+      ],
+      "flow": [
+        {
+          "eyebrow": "[Placeholder] Layer",
+          "title": "[Placeholder] Part one",
+          "text": "[Placeholder] One line."
+        },
+        {
+          "eyebrow": "[Placeholder] Layer",
+          "title": "[Placeholder] Part two",
+          "text": "[Placeholder] One line."
+        },
+        {
+          "eyebrow": "[Placeholder] Layer",
+          "title": "[Placeholder] Part three",
+          "text": "[Placeholder] One line."
+        }
+      ],
+      "status": {
+        "label": "[Placeholder] Status label",
+        "text": "[Placeholder] Short status note."
+      }
+    },
+    {
+      "type": "text",
+      "eyebrow": "[Placeholder] Eyebrow",
+      "heading": "[Placeholder] Fallback heading.",
+      "body": "[Placeholder] Paragraphs separated by \\n\\n."
+    },
+    {
+      "type": "image",
+      "media": {
+        "src": "",
+        "alt": ""
+      },
+      "caption": "[Placeholder] Optional caption."
+    }
+  ]
+}

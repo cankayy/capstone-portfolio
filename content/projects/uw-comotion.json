@@ -1,0 +1,167 @@
+{
+  "_readme": "Placeholder project so the list, filters and modal can be tested. Replace with real content using CONTENT_INTAKE.md.",
+  "slug": "uw-comotion",
+  "title": "UW Comotion",
+  "order": 3,
+  "categories": [
+    "Product Definition",
+    "User Research",
+    "UX/UI Design"
+  ],
+  "card": {
+    "shortName": "Comotion",
+    "summary": "[Placeholder] Two to four sentences about UW Comotion: what the team studied or built, and the main outcome.",
+    "tags": [
+      "User Research",
+      "Product Strategy"
+    ],
+    "image": {
+      "src": "",
+      "alt": "UW Comotion cover image"
+    }
+  },
+  "sections": [
+    {
+      "type": "intro",
+      "banner": {
+        "src": "",
+        "alt": "UW Comotion banner image"
+      },
+      "title": "UW Comotion",
+      "summary": "[Placeholder] One paragraph summary of the project, the problem it addresses and the result.",
+      "meta": [
+        {
+          "label": "Role",
+          "value": "[Placeholder] Value"
+        },
+        {
+          "label": "Stage",
+          "value": "[Placeholder] Value"
+        },
+        {
+          "label": "Platform",
+          "value": "[Placeholder] Value"
+        },
+        {
+          "label": "Focus",
+          "value": "[Placeholder] Value"
+        }
+      ],
+      "image": {
+        "src": "",
+        "alt": "UW Comotion hero image"
+      }
+    },
+    {
+      "type": "overview",
+      "eyebrow": "Overview",
+      "heading": "[Placeholder] What this project set out to do.",
+      "lead": "[Placeholder] Lead paragraph that frames the project.",
+      "pillars": [
+        {
+          "title": "[Placeholder] Discover",
+          "text": "[Placeholder] One line."
+        },
+        {
+          "title": "[Placeholder] Define",
+          "text": "[Placeholder] One line."
+        },
+        {
+          "title": "[Placeholder] Deliver",
+          "text": "[Placeholder] One line."
+        },
+        {
+          "title": "[Placeholder] Measure",
+          "text": "[Placeholder] One line."
+        }
+      ]
+    },
+    {
+      "type": "steps",
+      "eyebrow": "Research method",
+      "intro": "[Placeholder] How we ran the study, from recruiting to synthesis.",
+      "steps": [
+        {
+          "title": "[Placeholder] Recruit",
+          "text": "[Placeholder] One line."
+        },
+        {
+          "title": "[Placeholder] Interview",
+          "text": "[Placeholder] One line."
+        },
+        {
+          "title": "[Placeholder] Synthesize",
+          "text": "[Placeholder] One line."
+        },
+        {
+          "title": "[Placeholder] Prioritize",
+          "text": "[Placeholder] One line."
+        },
+        {
+          "title": "[Placeholder] Test",
+          "text": "[Placeholder] One line."
+        },
+        {
+          "title": "[Placeholder] Report",
+          "text": "[Placeholder] One line."
+        }
+      ]
+    },
+    {
+      "type": "feature",
+      "number": "01",
+      "label": "[Placeholder] Label",
+      "heading": "[Placeholder] A short feature heading.",
+      "body": "[Placeholder] One or two short paragraphs explaining this finding or deliverable.",
+      "bullets": [
+        "[Placeholder] Point one",
+        "[Placeholder] Point two"
+      ],
+      "media": [
+        {
+          "src": "",
+          "alt": "Screen 1",
+          "frame": "phone"
+        }
+      ]
+    },
+    {
+      "type": "feature",
+      "number": "02",
+      "label": "[Placeholder] Label",
+      "heading": "[Placeholder] A short feature heading.",
+      "body": "[Placeholder] One or two short paragraphs explaining this finding or deliverable.",
+      "bullets": [
+        "[Placeholder] Point one",
+        "[Placeholder] Point two"
+      ],
+      "media": [
+        {
+          "src": "",
+          "alt": "Screen 2",
+          "frame": "phone"
+        },
+        {
+          "src": "",
+          "alt": "Screen 2b",
+          "frame": "phone"
+        }
+      ]
+    },
+    {
+      "type": "split",
+      "columns": [
+        {
+          "eyebrow": "Founders",
+          "heading": "[Placeholder] What founders need",
+          "body": "[Placeholder] Short paragraph."
+        },
+        {
+          "eyebrow": "Mentors",
+          "heading": "[Placeholder] What mentors need",
+          "body": "[Placeholder] Short paragraph."
+        }
+      ]
+    }
+  ]
+}

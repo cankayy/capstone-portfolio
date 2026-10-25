@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Blueprint grid animation</title>
+<!--
+  BLUEPRINT GRID ANIMATION: standalone, no dependencies
+  -----------------------------------------------------
+  What it is: a full-bleed canvas of fine gray grid lines with heavier major lines and
+  small "+" marks at the major intersections. The grid:
+    - idles with a slow, subtle wave so it always feels alive
+    - bulges outward around the pointer like a lens, and darkens the lines near it
+    - sends a ripple through the lines when the pointer moves fast (calms down when it stops)
+    - eases back to flat when the pointer leaves
+
+  To add it to a site you need 3 pieces (all marked below):
+    1. HTML:  <canvas id="c"> inside a positioned container
+    2. CSS:   the .hero / #c rules
+    3. JS:    the <script> block at the bottom
+
+  Tweak the look and feel in the CFG object at the top of the script.
+  Respects prefers-reduced-motion (static grid that still reacts to the pointer, no idle wave).
+  Pauses drawing while scrolled out of view.
+-->
+<style>
+/* ---------- 2. CSS ---------- */
+*{box-sizing:border-box}
+html,body{margin:0;background:#fff;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;overflow-x:hidden}
+
+/* The container. The canvas fills it, so give it any height you like. */
+.hero{position:relative;height:100dvh;min-height:520px}
+#c{position:absolute;inset:0;width:100%;height:100%;display:block}
+</style>
+</head>
+<body>
+
+<!-- ---------- 1. HTML ---------- -->
+<div class="hero">
+  <canvas id="c" aria-hidden="true"></canvas>
+</div>
+
+<!-- ---------- 3. JS ---------- -->
+<script>
+(function(){
+/* ===== Settings: change these to restyle ===== */
+var CFG={
+  minor:24,            // px between fine lines
+  majorEvery:5,        // every Nth line is a heavier line (24 x 5 = a major line every 120px)
+  minorWidth:.75,      // line widths in CSS px
+  majorWidth:1,
+  minorColor:[242,242,242],   // resting line colors (RGB)
+  majorColor:[230,230,230],
+  hotMinor:[200,200,200],     // color the lines blend toward near the pointer
+  hotMajor:[165,165,165],
+  radius:150,          // how far the pointer's influence reaches (px)
+  bulge:.18,           // how strongly lines spread away from the pointer
+  ripple:4,            // max ripple strength (px) when the pointer moves fast
+  drift:1,             // idle wave strength (px). 0 = perfectly still grid
+  mark:3               // half-size of the "+" marks at major intersections. 0 = none
+};
+
+var cv=document.getElementById('c'),ctx=cv.getContext('2d');
+if(!ctx)return;
+var still=matchMedia('(prefers-reduced-motion:reduce)').matches;
+var W,H,dpr,S;
+var ptr={x:0,y:0,on:0};                       // raw pointer (canvas coords) and whether it's over the page
+var sx=-9999,sy=-9999,str=0,speed=0,t=0,vis=true; // smoothed pointer, influence strength, pointer speed
+var wx=0,wy=0;                                 // output of warp()
+
+function layout(){
+  W=cv.clientWidth||innerWidth;H=cv.clientHeight||innerHeight;
+  dpr=Math.min(devicePixelRatio||1,2);
+  cv.width=Math.round(W*dpr);cv.height=Math.round(H*dpr);
+  ctx.setTransform(dpr,0,0,dpr,0,0);
+  S=Math.max(.6,Math.min(1.3,W/1232));        // scale the pointer effect with viewport size
+}
+
+/* Displaces a grid point (x,y) -> (wx,wy): idle wave + pointer bulge + speed ripple. */
+var sig2=0,bulge=0,rip=0,dr=0,rw=26;
+function warp(x,y){
+  var ox=x+Math.cos(y*.004+t*.4)*dr, oy=y+Math.sin(x*.004+t*.5)*dr;
+  var dx=x-sx,dy=y-sy,d2=dx*dx+dy*dy,f=str*Math.exp(-d2/sig2);
+  if(f>.002){
+    var d=Math.sqrt(d2)||1,w=Math.sin(d/rw-t*5)*rip*f;
+    ox+=dx*f*bulge+dx/d*w; oy+=dy*f*bulge+dy/d*w;
+  }
+  wx=ox;wy=oy;
+}
+
+function mix(a,b,k){return'rgb('+Math.round(a[0]+(b[0]-a[0])*k)+','+Math.round(a[1]+(b[1]-a[1])*k)+','+Math.round(a[2]+(b[2]-a[2])*k)+')'}
+function grad(base,hot){
+  var R=CFG.radius*S*1.7,g=ctx.createRadialGradient(sx,sy,0,sx,sy,R);
+  g.addColorStop(0,mix(base,hot,str));
+  g.addColorStop(.5,mix(base,hot,str*.35));
+  g.addColorStop(1,mix(base,hot,0));
+  return g;
+}
+
+function draw(){
+  ctx.clearRect(0,0,W,H);
+  var step=10,sp=CFG.minor,pad=sp*2;
+  var pMin=new Path2D(),pMaj=new Path2D(),pMark=new Path2D();
+  var x0=-Math.ceil(pad/sp)*sp, x1=W+pad, y0=-Math.ceil(pad/sp)*sp, y1=H+pad;
+  var i,x,y;
+  // vertical lines
+  for(i=Math.round(x0/sp),x=i*sp;x<=x1;i++,x=i*sp){
+    var P=(i%CFG.majorEvery===0)?pMaj:pMin;
+    warp(x,y0);P.moveTo(wx,wy);
+    for(y=y0+step;y<=y1;y+=step){warp(x,y);P.lineTo(wx,wy)}
+  }
+  // horizontal lines
+  for(i=Math.round(y0/sp),y=i*sp;y<=y1;i++,y=i*sp){
+    var Q=(i%CFG.majorEvery===0)?pMaj:pMin;
+    warp(x0,y);Q.moveTo(wx,wy);
+    for(x=x0+step;x<=x1;x+=step){warp(x,y);Q.lineTo(wx,wy)}
+  }
+  // "+" marks at major intersections
+  if(CFG.mark>0){
+    var ms=sp*CFG.majorEvery,m=CFG.mark;
+    for(x=Math.ceil(x0/ms)*ms;x<=x1;x+=ms)for(y=Math.ceil(y0/ms)*ms;y<=y1;y+=ms){
+      warp(x,y);pMark.moveTo(wx-m,wy);pMark.lineTo(wx+m,wy);pMark.moveTo(wx,wy-m);pMark.lineTo(wx,wy+m);
+    }
+  }
+  ctx.lineCap='butt';ctx.lineJoin='round';
+  ctx.lineWidth=CFG.minorWidth;ctx.strokeStyle=grad(CFG.minorColor,CFG.hotMinor);ctx.stroke(pMin);
+  ctx.lineWidth=CFG.majorWidth;ctx.strokeStyle=grad(CFG.majorColor,CFG.hotMajor);ctx.stroke(pMaj);
+  if(CFG.mark>0){ctx.lineWidth=CFG.majorWidth;ctx.strokeStyle=grad(CFG.hotMinor,CFG.hotMajor);ctx.stroke(pMark)}
+}
+
+function frame(ms){
+  t=still?0:ms/1000;
+  // ease the pointer, its influence, and its speed
+  if(still){sx=ptr.x;sy=ptr.y;str=ptr.on;speed=0}
+  else{
+    if(sx<-9000&&ptr.on){sx=ptr.x;sy=ptr.y}
+    var nx=ptr.on?sx+(ptr.x-sx)*.16:sx, ny=ptr.on?sy+(ptr.y-sy)*.16:sy;
+    var v=Math.hypot(nx-sx,ny-sy);
+    sx=nx;sy=ny;
+    str+=(ptr.on-str)*.08;
+    speed+=(v-speed)*.12;
+  }
+  sig2=2*Math.pow(CFG.radius*S*.6,2);
+  bulge=CFG.bulge;rw=26*S;
+  rip=Math.min(speed,30)/30*CFG.ripple*S;
+  dr=still?0:CFG.drift*S;
+  if(vis||still)draw();
+  if(!still)requestAnimationFrame(frame);
+}
+
+function setPtr(e){var r=cv.getBoundingClientRect();ptr.x=e.clientX-r.left;ptr.y=e.clientY-r.top;ptr.on=1;if(still)frame(0)}
+function clearPtr(){ptr.on=0;if(still)frame(0)}
+addEventListener('pointermove',setPtr);
+addEventListener('pointerdown',setPtr);
+addEventListener('pointerup',function(e){if(e.pointerType!=='mouse')clearPtr()});
+addEventListener('pointercancel',clearPtr);
+document.documentElement.addEventListener('pointerleave',clearPtr);
+addEventListener('resize',function(){layout();if(still)frame(0)});
+if('IntersectionObserver' in window)new IntersectionObserver(function(e){vis=e[0].isIntersecting}).observe(cv);
+
+layout();requestAnimationFrame(frame);
+})();
+</script>
+</body>
+</html>

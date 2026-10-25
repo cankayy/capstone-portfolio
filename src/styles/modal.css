@@ -1,0 +1,78 @@
+/* Full-screen <dialog>. The dialog itself is the click target for "backdrop" clicks. */
+.modal {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  max-height: none;
+  margin: 0;
+  padding: clamp(12px, 4.6vh, 86px) clamp(8px, 2vw, 24px) clamp(12px, 3vh, 32px);
+  border: 0;
+  background: transparent;
+  overflow: hidden;
+  color: var(--c-text);
+}
+
+.modal::backdrop {
+  background: var(--c-backdrop);
+}
+
+.modal__panel {
+  position: relative;
+  max-width: var(--modal-max);
+  max-height: 100%;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: var(--r-card);
+  overflow-x: hidden;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+/* Sticky, zero-height bar so the close button floats over the banner and stays while scrolling. */
+.modal__bar {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  display: flex;
+  justify-content: flex-end;
+  height: 0;
+}
+
+.modal__close {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 44px;
+  height: 44px;
+  margin: 16px 16px 0 0;
+  border-radius: 50%;
+  background: rgb(255 255 255 / 0.55);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  color: #111;
+  transition: background-color 0.15s;
+}
+
+.modal__close:hover {
+  background: rgb(255 255 255 / 0.9);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .modal[open]::backdrop {
+    animation: modal-fade 0.22s ease-out;
+  }
+
+  .modal[open] .modal__panel {
+    animation: modal-rise 0.32s var(--ease-out);
+  }
+}
+
+@keyframes modal-fade {
+  from { opacity: 0; }
+}
+
+@keyframes modal-rise {
+  from { opacity: 0; transform: translateY(24px); }
+}
