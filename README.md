@@ -32,7 +32,7 @@ Missing images show a gray box with their alt text (and the missing path), so ga
 |---|---|
 | `content/site.json` | Tagline, nav links, Team Resume URL, filter labels, footer emails |
 | `content/projects/*.json` | One file per project |
-| `public/logo.svg` | Fox mark (placeholder; replace with the real file, same name) |
+| `public/logo.png` | Wolf logo (also used as the favicon) |
 | `src/grid.js` | Hero grid animation. Tune it in the `CFG` object |
 | `src/projects-list.js` | Filters, list, active-title rule, card, connector. `REVERT_TO_FIRST_ON_LEAVE` is at the top |
 | `src/modal.js` | Modal open/close, focus, scroll lock, `#slug` deep links |
