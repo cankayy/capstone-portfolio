@@ -8,24 +8,9 @@
   align-items: flex-start;
   justify-content: space-between;
   gap: 16px;
-  padding: clamp(24px, 3vw, 56px) var(--edge) 20px;
+  padding: clamp(24px, 3vw, 56px) var(--edge) 0;
   padding-top: max(clamp(24px, 3vw, 56px), env(safe-area-inset-top, 0px));
   pointer-events: none;
-}
-
-/* Soft white fade behind the header once scrolled, so it stays readable over content. */
-.site-header::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  background: linear-gradient(#fff 65%, rgb(255 255 255 / 0));
-  opacity: 0;
-  transition: opacity 0.25s;
-}
-
-.site-header.is-scrolled::before {
-  opacity: 1;
 }
 
 .site-logo,

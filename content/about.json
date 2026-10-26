@@ -1,0 +1,120 @@
+{
+  "_readme": "The About modal, opened from the About nav link and #about. Same section format as content/projects/*.json; the 'team' section type lists each person.",
+  "slug": "about",
+  "title": "About JACkaL",
+  "sections": [
+    {
+      "type": "intro",
+      "title": "About JACkaL",
+      "summary": "We’re four Information Management graduate students covering user research, data and business intelligence, product design and front-end development, so your project goes from first interviews to a measurable prototype with one team.",
+      "meta": [
+        { "label": "Program", "value": "Information Management, University of Washington" },
+        { "label": "Capstone", "value": "2026–27" },
+        { "label": "Team", "value": "Jaime, Athan, Cannon, Lavender" },
+        { "label": "Resume", "value": "[Team resume (PDF)](/team-resume.pdf)" }
+      ]
+    },
+    {
+      "type": "overview",
+      "eyebrow": "What we cover",
+      "heading": "From first interviews to a measurable prototype.",
+      "lead": "Each of us leads a different part of the work, so research, data, design and code stay connected from start to finish.",
+      "pillars": [
+        { "title": "User research", "text": "Interviews, media elicitation, journey mapping and qualitative analysis." },
+        { "title": "Data & business intelligence", "text": "SQL, R, Python, GA4 and Tableau to measure what matters." },
+        { "title": "Product design", "text": "0–1 product design, design systems and accessible web design in Figma." },
+        { "title": "Front-end development", "text": "Rapid prototypes and MVPs, built and shipped in code." }
+      ]
+    },
+    {
+      "type": "team",
+      "eyebrow": "The pack",
+      "heading": "Meet the team.",
+      "headingSize": "md",
+      "members": [
+        {
+          "name": "Jaime",
+          "role": "User research & data analysis",
+          "photo": { "src": "/images/team/jaime.jpg", "alt": "Portrait of Jaime" },
+          "email": "jserra2@uw.edu",
+          "linkedin": "http://www.linkedin.com/in/jaime-serrano-248327239",
+          "bio": "Jaime brings user research and data analysis to the team, from geospatial analysis in ArcGIS to statistical work in R and Python, and turns findings into prototypes in Figma.",
+          "skills": ["User research", "Data analysis (R, Python)", "Geospatial analysis (ArcGIS)", "Prototyping (Figma)"],
+          "experience": [
+            { "title": "Research Analyst", "org": "University of Washington" },
+            { "title": "Research Assistant", "org": "University of Washington" }
+          ],
+          "links": [
+            {
+              "label": "Case study",
+              "text": "[Musician Booking](#musician-booking): Lead User Researcher on a qualitative study of how early-career musicians in Seattle make themselves “bookable,” using media elicitation and journey mapping with four musicians."
+            }
+          ]
+        },
+        {
+          "name": "Athan",
+          "role": "Project management & business intelligence",
+          "photo": { "src": "/images/team/athan.jpg", "alt": "Portrait of Athan" },
+          "email": "athanc@uw.edu",
+          "linkedin": "https://www.linkedin.com/in/athan-cheng/",
+          "bio": "Athan keeps projects on track and grounded in data, combining project management with business intelligence in SQL, operations and automation, and research methods.",
+          "skills": ["Project management", "Business intelligence (SQL)", "Operations & automation", "Research methods"],
+          "experience": [
+            { "title": "Communications Director", "org": "Life Pods" },
+            { "title": "Operations Associate", "org": "CardinalTalent.ai" }
+          ],
+          "links": [
+            {
+              "label": "Case study",
+              "text": "[APS & Transit](#aps-transit): Project Manager on an evaluation of 42 signalized intersections in Seattle’s University District, with recommendations for Accessible Pedestrian Signals."
+            }
+          ]
+        },
+        {
+          "name": "Cannon",
+          "role": "Product design & front-end development",
+          "photo": { "src": "/images/team/cannon.jpg", "alt": "Portrait of Cannon" },
+          "email": "c4nnkayy@uw.edu",
+          "linkedin": "https://www.linkedin.com/in/cannonhurst/",
+          "bio": "Cannon designs products from 0 to 1 and builds them, working across design systems, rapid prototypes and MVPs, and front-end code.",
+          "skills": ["0–1 product design", "Design systems", "Front-end development", "Rapid prototyping & MVPs"],
+          "experience": [
+            { "title": "Product Designer", "org": "Nuts & Bolts AI" },
+            { "title": "Product Designer", "org": "Hugsi" }
+          ],
+          "links": [
+            {
+              "label": "Case study",
+              "text": "[Cheerful AI](#cheerful-ai): UX Engineer who designed the core screens of an agentic influencer marketing platform, from the dashboard to creator search, and implemented them with Claude Code."
+            }
+          ]
+        },
+        {
+          "name": "Lavender",
+          "role": "UX design & web",
+          "photo": { "src": "/images/team/lavender.jpg", "alt": "Portrait of Lavender" },
+          "email": "hchang42@uw.edu",
+          "linkedin": "https://www.linkedin.com/in/lavender-chang/",
+          "bio": "Lavender designs clear, accessible web experiences and connects them to marketing, content and analytics in GA4 and Tableau.",
+          "skills": ["UX design", "Web design & accessibility", "Marketing & content", "Data analytics (GA4, Tableau)"],
+          "experience": [
+            { "title": "UX Designer", "org": "CoMotion at University of Washington" },
+            { "title": "Product Marketing Assistant", "org": "University of Rochester Libraries" }
+          ],
+          "links": [
+            {
+              "label": "Case study",
+              "text": "[UW CoMotion](#uw-comotion): UX Designer on a new program website, a restructured inventorship guide and a resource library prototype, built in Figma and WordPress."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "eyebrow": "Work with us",
+      "heading": "Sponsor our capstone.",
+      "body": "Reach the whole team at [athanc@uw.edu](mailto:athanc@uw.edu), [c4nnkayy@uw.edu](mailto:c4nnkayy@uw.edu), [hchang42@uw.edu](mailto:hchang42@uw.edu) and [jserra2@uw.edu](mailto:jserra2@uw.edu), or open the [team resume](/team-resume.pdf)."
+    }
+  ]
+}

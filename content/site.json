@@ -22,8 +22,7 @@
     ],
     "link": {
       "label": "Learn More",
-      "href": "/team-resume.pdf",
-      "external": true
+      "href": "#about"
     }
   },
   "nav": [
@@ -32,8 +31,8 @@
       "href": "#projects"
     },
     {
-      "label": "Contact",
-      "href": "#contact"
+      "label": "About",
+      "href": "#about"
     },
     {
       "label": "Team Resume",

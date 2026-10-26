@@ -622,6 +622,122 @@
   aspect-ratio: 16 / 9;
 }
 
+/* ---------- team (About modal) ---------- */
+.cs-team > li + li {
+  margin-top: clamp(48px, 6vw, 80px);
+  padding-top: clamp(48px, 6vw, 80px);
+  border-top: 1px solid var(--c-line);
+}
+
+.cs-team__member {
+  display: grid;
+  grid-template-columns: minmax(0, 4fr) minmax(0, 7fr);
+  gap: clamp(32px, 5vw, 72px);
+}
+
+.cs-team__id {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.cs-team__photo {
+  width: clamp(112px, 12vw, 160px);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: var(--c-placeholder);
+}
+
+.cs-team__role {
+  margin-top: 6px;
+  font-size: var(--fs-small);
+  color: var(--c-muted);
+}
+
+.cs-team__contacts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.cs-team__contact {
+  padding: 7px 14px;
+  border-color: #d6d6d6;
+  font-size: 13px;
+  color: var(--c-text);
+  transition: border-color 0.15s, background-color 0.15s;
+}
+
+.cs-team__contact:hover {
+  border-color: #999;
+  background: #fafafa;
+}
+
+.cs-team__detail > .cs-body:first-child {
+  margin-top: 0;
+}
+
+.cs-team__cols {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 32px 40px;
+  margin-top: 32px;
+}
+
+.cs-team__skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.cs-team__exp {
+  margin-top: 14px;
+}
+
+.cs-team__exp li {
+  display: flex;
+  flex-direction: column;
+}
+
+.cs-team__exp li + li {
+  margin-top: 14px;
+}
+
+.cs-team__exp .cs-item-title {
+  font-size: 17px;
+}
+
+.cs-team__exp .cs-small {
+  margin-top: 2px;
+}
+
+.cs-team__links {
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid var(--c-line);
+}
+
+.cs-team__link {
+  margin-top: 10px;
+  font-size: var(--fs-small);
+  line-height: 1.6;
+  color: var(--c-muted);
+}
+
+.cs-team__link a {
+  font-weight: 600;
+  color: var(--c-text);
+}
+
+@media (max-width: 767.98px) {
+  .cs-team__member,
+  .cs-team__cols {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
 /* ---------- Responsive ---------- */
 @media (max-width: 899.98px) {
   .cs-intro__body,

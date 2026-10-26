@@ -30,6 +30,7 @@ One JSON file at `content/projects/<slug>.json` that follows `content/projects/_
 | Tooling, prototypes or testing setups shown with 2 images and a short list | `media-pair` |
 | Tech stack, system diagram, data flow, or how parts of a solution connect | `architecture` (`tools` = stack pills, `flow` = 2–5 stages) |
 | Anything else worth keeping (budget breakdown, next steps, acknowledgements) | `text` |
+| People: photo, role, bio, skills, experience, email, LinkedIn (the About modal, `content/about.json`) | `team` |
 | A standalone large image or video | `image` (optional `lead` above it, e.g. a prototype link) |
 
 ## Writing rules

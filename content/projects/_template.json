@@ -150,6 +150,26 @@
     },
 
     {
+      "type": "team",
+      "_note": "People, one row each. Used by content/about.json.",
+      "eyebrow": "The pack",
+      "heading": "Meet the team.",
+      "members": [
+        {
+          "name": "Name",
+          "role": "Short focus line",
+          "photo": { "src": "/images/team/name.jpg", "alt": "Portrait of Name" },
+          "email": "name@uw.edu",
+          "linkedin": "https://www.linkedin.com/in/name/",
+          "bio": "One or two sentences.",
+          "skills": ["Skill one", "Skill two"],
+          "experience": [{ "title": "Job title", "org": "Organization" }],
+          "links": [{ "label": "Case study", "text": "[Project](#project-slug): what this person did." }]
+        }
+      ]
+    },
+
+    {
       "type": "text",
       "eyebrow": "Eyebrow",
       "heading": "Fallback heading.",

@@ -5,12 +5,14 @@ import './styles/modal.css';
 import './styles/sections.css';
 
 import site from '../content/site.json';
+import about from '../content/about.json';
 import { h, rich } from './render/dom.js';
 import { initGrid } from './grid.js';
 import { initProjects } from './projects-list.js';
 import { initModal } from './modal.js';
 import { initCursor } from './cursor.js';
 import { initPack } from './pack.js';
+import { initScroll } from './scroll.js';
 
 // Every content/projects/*.json is a project, except files starting with "_".
 const files = import.meta.glob(['/content/projects/*.json', '!/content/projects/_*.json'], { eager: true, import: 'default' });
@@ -43,6 +45,7 @@ initPack(document.querySelector('[data-pack]'), {
   flowParent: document.querySelector('[data-hero-text]'),
 });
 initCursor();
+initScroll();
 
 /* ---------- Footer ---------- */
 const footer = site.footer || {};
@@ -63,5 +66,15 @@ const list = initProjects(document.querySelector('#projects'), {
 });
 modal = initModal(document.querySelector('[data-modal]'), {
   projects,
+  pages: [about],
   focusTarget: (slug) => list.focusTarget(slug),
+});
+
+// In-page links to a modal slug (#about, or a case study linked from About) open the modal with a history entry.
+document.addEventListener('click', (e) => {
+  const a = e.target.closest?.('a[href^="#"]');
+  const slug = a && decodeURIComponent(a.getAttribute('href').slice(1));
+  if (!slug || !modal.has(slug) || e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+  e.preventDefault();
+  modal.open(slug, a);
 });

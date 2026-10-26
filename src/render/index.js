@@ -10,6 +10,7 @@ import mediaPair from './sections/media-pair.js';
 import architecture from './sections/architecture.js';
 import text from './sections/text.js';
 import image from './sections/image.js';
+import team from './sections/team.js';
 
 /** Section `type` -> renderer. Add a new type here and in content/projects/_template.json. */
 export const renderers = {
@@ -24,6 +25,7 @@ export const renderers = {
   architecture,
   text,
   image,
+  team,
 };
 
 const TEXT_FIELDS = ['eyebrow', 'heading', 'lead', 'body'];

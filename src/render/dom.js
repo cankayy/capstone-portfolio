@@ -53,7 +53,7 @@ export function rich(text) {
     if (match[1] != null) {
       out.push(h('strong', null, h('em', null, match[1])));
     } else if (SAFE_URL.test(match[3])) {
-      const external = /^https?:/i.test(match[3]);
+      const external = /^https?:/i.test(match[3]) || /\.pdf(\?|#|$)/i.test(match[3]);
       out.push(h('a', { href: match[3], target: external && '_blank', rel: external && 'noopener noreferrer' }, match[2]));
     } else {
       out.push(match[2]);

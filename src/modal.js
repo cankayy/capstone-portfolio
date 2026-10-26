@@ -1,13 +1,13 @@
 import { renderSections } from './render/index.js';
 
 /**
- * Project modal: <dialog> with showModal() for focus handling and Escape,
+ * Project (and About) modal: <dialog> with showModal() for focus handling and Escape,
  * body scroll lock, and #slug deep links that work with the back button.
  */
-export function initModal(dialog, { projects, focusTarget }) {
+export function initModal(dialog, { projects, pages = [], focusTarget }) {
   const panel = dialog.querySelector('[data-modal-panel]');
   const content = dialog.querySelector('[data-modal-content]');
-  const bySlug = new Map(projects.map((p) => [p.slug, p]));
+  const bySlug = new Map([...projects, ...pages].map((p) => [p.slug, p]));
   let opener = null;
   let openSlug = null;
   let pushed = false; // true when opening added a history entry we can go back from
@@ -80,6 +80,10 @@ export function initModal(dialog, { projects, focusTarget }) {
   if (bySlug.has(slugFromHash())) show(slugFromHash());
 
   return {
+    /** True when `slug` opens in this modal (a project or a page like About). */
+    has(slug) {
+      return bySlug.has(slug);
+    },
     open(slug, from) {
       if (!bySlug.has(slug)) return;
       opener = from || null;
