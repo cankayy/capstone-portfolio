@@ -1,158 +1,203 @@
 {
-  "_readme": "Placeholder project so the list, filters and modal can be tested. Replace with real content using CONTENT_INTAKE.md.",
   "slug": "cheerful-ai",
   "title": "Cheerful AI",
   "order": 4,
   "categories": [
-    "Front-End Development",
-    "UX/UI Design"
+    "UX/UI Design",
+    "Front-End Development"
   ],
   "card": {
-    "shortName": "Cheerful",
-    "summary": "[Placeholder] Two to four sentences about Cheerful AI: what the team studied or built, and the main outcome.",
+    "shortName": "Cheerful AI",
+    "summary": "An agentic marketing platform that helps agencies run influencer campaigns faster with AI. I designed the core screens, from the dashboard to the inbox, campaigns and creator search, then implemented them with Claude Code, replacing spreadsheets, Gmail and manual tracking with one product.",
     "tags": [
-      "Front-End Development",
-      "AI"
+      "UX Engineering",
+      "Claude Code"
     ],
     "image": {
-      "src": "",
-      "alt": "Cheerful AI cover image"
+      "src": "/images/cheerful-ai/card.jpg",
+      "alt": "Cheerful AI dashboard showing total revenue, engagement rate, active campaigns and a reach chart"
     }
   },
   "sections": [
     {
       "type": "intro",
       "banner": {
-        "src": "",
-        "alt": "Cheerful AI banner image"
+        "src": "/images/cheerful-ai/bento-dashboard.jpg",
+        "alt": "Cheerful AI dashboard with revenue, engagement, posts detected and opt-in rate above an active campaigns table and reach chart"
       },
-      "title": "Cheerful AI",
-      "summary": "[Placeholder] One paragraph summary of the project, the problem it addresses and the result.",
+      "title": "An agentic marketing platform for influencer campaigns",
+      "summary": "An agentic marketing platform that helps agencies run influencer campaigns faster with AI. I designed the core screens, from the dashboard to the inbox, campaigns and creator search, then implemented them with Claude Code, replacing spreadsheets, Gmail and manual tracking with one product.",
       "meta": [
         {
           "label": "Role",
-          "value": "[Placeholder] Value"
+          "value": "UX Engineer – Cannon"
         },
         {
-          "label": "Stage",
-          "value": "[Placeholder] Value"
+          "label": "Company",
+          "value": "Nuts & Bolts AI"
         },
         {
-          "label": "Platform",
-          "value": "[Placeholder] Value"
+          "label": "Built with",
+          "value": "Claude Code"
         },
         {
-          "label": "Focus",
-          "value": "[Placeholder] Value"
+          "label": "Live site",
+          "value": "[cheerful.ai](https://www.cheerful.ai/)"
         }
       ],
       "image": {
-        "src": "",
-        "alt": "Cheerful AI hero image"
+        "src": "/images/cheerful-ai/bento-profile.jpg",
+        "alt": "Creator profile panel showing opt-in status, follower count, engagement, a discount code, notes and recent content"
       }
     },
     {
       "type": "overview",
-      "eyebrow": "Overview",
-      "heading": "[Placeholder] What this project set out to do.",
-      "lead": "[Placeholder] Lead paragraph that frames the project.",
+      "eyebrow": "The problem",
+      "heading": "Agencies needed a better way to manage influencer partnerships at scale.",
+      "lead": "Through research with marketing agencies, three main reasons emerged.",
       "pillars": [
         {
-          "title": "[Placeholder] Discover",
-          "text": "[Placeholder] One line."
+          "title": "Fragmented tools",
+          "text": "Outreach, contracts and performance lived in different tools, making it hard to see the full picture."
         },
         {
-          "title": "[Placeholder] Define",
-          "text": "[Placeholder] One line."
+          "title": "Context",
+          "text": "Without context, campaign data was just numbers. It didn’t show what was working or why."
         },
         {
-          "title": "[Placeholder] Deliver",
-          "text": "[Placeholder] One line."
-        },
-        {
-          "title": "[Placeholder] Measure",
-          "text": "[Placeholder] One line."
+          "title": "Time",
+          "text": "Agencies didn’t have time to dig through dashboards to find actionable insights."
         }
       ]
-    },
-    {
-      "type": "comparison",
-      "eyebrow": "Redesign",
-      "heading": "[Placeholder] From the old flow to the new one.",
-      "lead": "[Placeholder] What changed and why.",
-      "a": {
-        "eyebrow": "Before",
-        "heading": "[Placeholder] Old flow",
-        "body": "[Placeholder] Where it fell short.",
-        "media": {
-          "src": "",
-          "alt": "Old flow screenshot"
-        }
-      },
-      "b": {
-        "eyebrow": "After",
-        "heading": "[Placeholder] New flow",
-        "body": "[Placeholder] What it does now.",
-        "media": {
-          "src": "",
-          "alt": "New flow screenshot"
-        }
-      }
     },
     {
       "type": "feature",
-      "number": "01",
-      "label": "[Placeholder] Label",
-      "heading": "[Placeholder] A short feature heading.",
-      "body": "[Placeholder] One or two short paragraphs explaining this finding or deliverable.",
+      "label": "Leading design from 0 to 1",
+      "heading": "Research first, then the core experience.",
+      "body": "I led the product design for Cheerful AI’s core experience: dashboard metrics, active campaigns and creator opt-in flows. The focus was on clarity and action, surfacing total revenue, engagement and campaign health at a glance so agencies could act quickly.\n\nThe work started with user research and journey mapping to understand how agencies actually run campaigns today.",
       "bullets": [
-        "[Placeholder] Point one",
-        "[Placeholder] Point two"
+        "User research and journey mapping",
+        "Competitive analysis",
+        "Sketches of the campaign flow"
       ],
       "media": [
         {
-          "src": "",
-          "alt": "Screen 1",
-          "frame": "phone"
-        }
-      ],
-      "side": "left"
-    },
-    {
-      "type": "architecture",
-      "eyebrow": "Architecture",
-      "heading": "[Placeholder] How the pieces fit.",
-      "lead": "[Placeholder] Lead paragraph.",
-      "tools": [
-        "[Placeholder] React",
-        "[Placeholder] Node",
-        "[Placeholder] Postgres"
-      ],
-      "flow": [
-        {
-          "eyebrow": "Client",
-          "title": "[Placeholder] Web app",
-          "text": "[Placeholder] One line."
-        },
-        {
-          "eyebrow": "Server",
-          "title": "[Placeholder] API",
-          "text": "[Placeholder] One line."
-        },
-        {
-          "eyebrow": "Data",
-          "title": "[Placeholder] Database",
-          "text": "[Placeholder] One line."
+          "src": "/images/cheerful-ai/user-research-journey-mapping.png",
+          "alt": "Research board with a new user flow, notes from three interviews and a mind map of findings",
+          "frame": "none"
         }
       ]
+    },
+    {
+      "type": "media-pair",
+      "eyebrow": "Exploration",
+      "heading": "From existing tools to first sketches.",
+      "lead": "A competitive analysis mapped how other platforms handle creator search, lists, email sequences and tracking. Sketches then worked through the campaign creation process before anything moved to high fidelity.",
+      "items": [
+        {
+          "image": {
+            "src": "/images/cheerful-ai/competitive-analysis.png",
+            "alt": "Competitive analysis board comparing screenshots of other platforms’ flows, from creator search to email sequencing, with sticky-note takeaways"
+          },
+          "caption": "Competitive analysis",
+          "width": 2.4
+        },
+        {
+          "image": {
+            "src": "/images/cheerful-ai/campaign-creation-sketches.png",
+            "alt": "Hand-drawn sketches of the campaign creation screens"
+          },
+          "caption": "Sketches of the campaign creation process",
+          "width": 1
+        }
+      ]
+    },
+    {
+      "type": "split",
+      "columns": [
+        {
+          "eyebrow": "Design",
+          "heading": "I designed every core screen",
+          "body": "From the sketches, I designed the screens agencies use every day: the dashboard, inbox, campaigns flow and creator search. Each one follows the same focus on clarity and action."
+        },
+        {
+          "eyebrow": "Build",
+          "heading": "Then I built them with Claude Code",
+          "body": "As the team’s UX engineer, I implemented my own designs using Claude Code, taking each screen from design to working product myself."
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "eyebrow": "01 Dashboard",
+      "heading": "Performance and relationships in one view.",
+      "body": "The platform enables marketing agencies to run influencer campaigns for brands with clearer visibility into performance and creator relationships.\n\nKey flows, from campaign creation to opt-in tracking, are designed to reduce friction and support faster decisions."
     },
     {
       "type": "image",
       "media": {
-        "src": "",
-        "alt": "Final product screenshot"
-      },
-      "caption": "[Placeholder] Caption."
+        "src": "/images/cheerful-ai/screen-dashboard.jpg",
+        "alt": "Dashboard with total revenue, average engagement rate, posts detected and total opt-in rate, an active campaigns table, a reach chart, recent posts and recent opt-ins"
+      }
+    },
+    {
+      "type": "text",
+      "eyebrow": "02 Inbox",
+      "heading": "Every creator conversation, with AI drafts.",
+      "body": "Managing creator replies across dozens of campaigns meant endless tab-switching and manual copy-pasting.\n\nThe inbox centralizes all creator communication in one place, with AI-generated draft replies that match the campaign’s tone, so teams can review, edit and send in seconds instead of starting from scratch every time."
+    },
+    {
+      "type": "image",
+      "media": {
+        "src": "/images/cheerful-ai/screen-inbox.jpg",
+        "alt": "Inbox with a list of creator threads on the left and an open conversation with an AI-drafted reply on the right"
+      }
+    },
+    {
+      "type": "text",
+      "eyebrow": "03 Campaigns",
+      "heading": "A guided 7-step campaign flow.",
+      "body": "Campaign creation was previously scattered across spreadsheets, email threads and separate tools.\n\nThe campaigns flow brings everything into a single guided 7-step process, from defining the campaign type and setting up email sequences to selecting creators and launching, giving teams full visibility and control from one place."
+    },
+    {
+      "type": "image",
+      "media": {
+        "src": "/images/cheerful-ai/screen-campaigns.jpg",
+        "alt": "Campaign page listing creators with their email, address, status, last contact date and actions"
+      }
+    },
+    {
+      "type": "text",
+      "eyebrow": "04 Creator search",
+      "heading": "From hours of scrolling to minutes.",
+      "body": "Finding the right creators used to mean hours of manual scrolling on Instagram and TikTok.\n\nThe AI-powered creator search lets teams enter a handle and instantly surface similar profiles, with follower counts, posting frequency and engagement data, cutting discovery time from hours to minutes."
+    },
+    {
+      "type": "image",
+      "media": {
+        "src": "/images/cheerful-ai/screen-creator-search.jpg",
+        "alt": "Creator search results for similar profiles, each row showing followers, total posts, posting frequency and a Save button"
+      }
+    },
+    {
+      "type": "overview",
+      "eyebrow": "The outcome",
+      "heading": "From concept to a platform used by real agencies.",
+      "lead": "The design replaced spreadsheets, Gmail and manual tracking with one product. Usability testing and client feedback confirmed that core tasks could be done without guidance and that AI outreach cut campaign setup time.",
+      "pillars": [
+        {
+          "title": "Agency lead",
+          "text": "“We were able to get through setup and launch a campaign in one sitting. That used to take us days across different tools.”"
+        },
+        {
+          "title": "Marketing team",
+          "text": "“The AI drafts save us hours. We tweak the tone and hit send instead of starting from a blank email every time.”"
+        },
+        {
+          "title": "Client feedback",
+          "text": "“New people on the team picked it up without training. Everything we need is in one place now.”"
+        }
+      ]
     }
   ]
 }
