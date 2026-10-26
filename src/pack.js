@@ -1,7 +1,7 @@
 import { h } from './render/dom.js';
 
 // "Meet the Pack" card in the hero. Draggable within the hero on larger screens,
-// in normal flow under the tagline on small ones. Minimizes to a pill.
+// in normal flow under the tagline on small ones, where it starts minimized. Minimizes to a pill.
 
 const SMALL = matchMedia('(max-width: 767.98px)');
 const REDUCED = matchMedia('(prefers-reduced-motion: reduce)');
@@ -90,13 +90,13 @@ export function initPack(card, { team = {}, hero, header, flowParent }) {
   card.addEventListener('pointercancel', endDrag);
 
   /* ---------- Minimize / expand ---------- */
-  function setCollapsed(collapsed) {
+  function setCollapsed(collapsed, animate = true) {
     const from = box.getBoundingClientRect();
     card.classList.toggle('is-collapsed', collapsed);
     toggle.setAttribute('aria-label', collapsed ? 'Expand team card' : 'Minimize team card');
     toggle.setAttribute('aria-expanded', String(!collapsed));
     reclamp();
-    if (REDUCED.matches) return;
+    if (!animate || REDUCED.matches) return;
     const to = box.getBoundingClientRect();
     box.animate(
       [
@@ -115,6 +115,7 @@ export function initPack(card, { team = {}, hero, header, flowParent }) {
       flowParent.append(card);
       card.style.transform = '';
       card.classList.remove('is-floating');
+      setCollapsed(true, false); // starts minimized on small screens
     } else {
       hero.append(card);
       card.classList.add('is-floating');

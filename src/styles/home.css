@@ -100,6 +100,91 @@
   background: #e6e6e6;
 }
 
+/* Hamburger button, small screens only (src/main.js toggles the menu). */
+.site-menu-btn {
+  display: none;
+  place-items: center;
+  width: 44px;
+  background: rgb(242 242 242 / 0.92);
+  border: 1px solid #ebebeb;
+  border-radius: 50%;
+  color: #111;
+}
+
+.site-menu-btn svg path {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  transition: transform 0.2s var(--ease-out), opacity 0.2s;
+  transform-origin: center;
+}
+
+.site-header.is-menu-open .site-menu-btn .bar-top {
+  transform: translateY(5px) rotate(45deg);
+}
+
+.site-header.is-menu-open .site-menu-btn .bar-mid {
+  opacity: 0;
+}
+
+.site-header.is-menu-open .site-menu-btn .bar-bottom {
+  transform: translateY(-5px) rotate(-45deg);
+}
+
+@media (max-width: 767.98px) {
+  .site-actions {
+    position: relative;
+    margin-top: 0;
+    gap: 8px;
+  }
+
+  .site-header {
+    align-items: center;
+  }
+
+  .site-sponsor {
+    padding: 0 18px;
+  }
+
+  .site-menu-btn {
+    display: grid;
+    height: 44px;
+  }
+
+  .site-nav {
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+    margin: 0;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-6px);
+    transition: opacity 0.18s, transform 0.18s var(--ease-out), visibility 0.18s;
+  }
+
+  .site-header.is-menu-open .site-nav {
+    visibility: visible;
+    opacity: 1;
+    transform: none;
+  }
+
+  .site-nav__list {
+    flex-direction: column;
+    min-width: 200px;
+    padding: 6px;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 12px 32px rgb(0 0 0 / 0.1);
+  }
+
+  .site-nav a {
+    padding: 12px 14px;
+    border-radius: 12px;
+    font-size: 16px;
+  }
+}
+
 /* ---------- Hero ---------- */
 .hero {
   position: relative;
@@ -572,47 +657,6 @@
 }
 
 @media (max-width: 639.98px) {
-  /* Logo and Sponsor Us share the first row, the nav pill gets its own row. */
-  .site-header {
-    display: grid;
-    grid-template-columns: auto auto;
-    justify-content: space-between;
-    align-items: center;
-    row-gap: 14px;
-  }
-
-  .site-actions {
-    display: contents;
-  }
-
-  .site-sponsor {
-    grid-area: 1 / 2;
-    padding: 10px 16px;
-  }
-
-  .site-nav {
-    grid-column: 1 / -1;
-    justify-self: start;
-    margin-top: 0;
-  }
-
-  .site-nav a {
-    padding: 10px 10px;
-  }
-
-  .site-nav__list {
-    padding: 3px 4px;
-  }
-}
-
-@media (max-width: 399.98px) {
-  .site-nav a {
-    padding: 9px 8px;
-    font-size: 13.5px;
-  }
-}
-
-@media (max-width: 639.98px) {
   .projects__filters {
     flex-wrap: nowrap;
     overflow-x: auto;
@@ -680,11 +724,5 @@
 
   .pack.is-collapsed {
     width: max-content;
-  }
-}
-
-@media (max-width: 639.98px) {
-  .hero__inner {
-    padding-top: 172px;
   }
 }

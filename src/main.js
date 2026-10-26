@@ -35,6 +35,23 @@ addEventListener('scroll', onScroll, { passive: true });
 onScroll();
 new ResizeObserver(() => document.documentElement.style.setProperty('--header-h', `${header.offsetHeight}px`)).observe(header);
 
+// Small screens: the nav collapses into a hamburger menu next to Sponsor Us.
+const menuBtn = header.querySelector('[data-menu-btn]');
+function setMenu(open) {
+  header.classList.toggle('is-menu-open', open);
+  menuBtn.setAttribute('aria-expanded', String(open));
+  menuBtn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+}
+menuBtn.addEventListener('click', () => setMenu(!header.classList.contains('is-menu-open')));
+header.querySelector('.site-nav').addEventListener('click', (e) => e.target.closest('a') && setMenu(false));
+document.addEventListener('pointerdown', (e) => !e.target.closest?.('.site-actions') && setMenu(false));
+document.addEventListener('keydown', (e) => {
+  if (e.key !== 'Escape' || !header.classList.contains('is-menu-open')) return;
+  setMenu(false);
+  menuBtn.focus();
+});
+matchMedia('(max-width: 767.98px)').addEventListener('change', () => setMenu(false));
+
 /* ---------- Hero ---------- */
 document.querySelector('[data-tagline]').replaceChildren(...rich(site.tagline || ''));
 initGrid(document.querySelector('[data-grid]'));
