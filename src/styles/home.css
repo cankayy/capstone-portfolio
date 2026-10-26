@@ -188,7 +188,9 @@
 /* ---------- Hero ---------- */
 .hero {
   position: relative;
-  height: clamp(520px, 70vh, 720px);
+  display: flex;
+  flex-direction: column;
+  min-height: clamp(520px, 70vh, 720px);
   overflow: hidden;
 }
 
@@ -203,12 +205,14 @@
 .hero__inner {
   position: relative;
   z-index: 1;
+  flex: 1;
   display: flex;
-  align-items: center;
-  height: 100%;
+  align-items: flex-start;
+  width: 100%;
   max-width: calc(var(--page-max) + 2 * var(--gutter));
   margin-inline: auto;
-  padding: 0 var(--gutter) 8%;
+  /* At least 160px between the bottom of the logo (the header) and the tagline. */
+  padding: calc(var(--header-h, 111px) + 160px) var(--gutter) 64px;
 }
 
 .hero__tagline {
@@ -694,17 +698,8 @@
 
 /* Meet the Pack card: in normal flow under the tagline, no dragging. Matches SMALL in src/pack.js. */
 @media (max-width: 767.98px) {
-  .hero {
-    height: auto;
-    min-height: clamp(520px, 70vh, 720px);
-    display: flex;
-    flex-direction: column;
-  }
-
   .hero__inner {
-    flex: 1;
-    height: auto;
-    padding: clamp(120px, 30vw, 150px) var(--gutter) 48px;
+    padding-bottom: 48px;
   }
 
   .pack__member {
