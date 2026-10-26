@@ -21,8 +21,8 @@
     {
       "type": "intro",
       "banner": {
-        "src": "/images/uw-comotion/category-nav.png",
-        "alt": "CASCADE innovations page with category tiles for Medical Devices, Hardware, Clean Tech, Agentic AI and Health Tech"
+        "src": "/images/uw-comotion/comotion-banner.png",
+        "alt": "UW CoMotion logo, “Your Innovation Partner,” on a purple background"
       },
       "title": "Improving digital experiences at UW CoMotion",
       "summary": "Designing and building web experiences that help researchers, entrepreneurs and industry partners discover innovation resources and navigate complex programs, from a new program website to a restructured patent guide and a resource library prototype.",
@@ -125,6 +125,14 @@
         }
       ],
       "side": "left"
+    },
+    {
+      "type": "image",
+      "media": {
+        "src": "/images/uw-comotion/category-nav.png",
+        "alt": "CASCADE innovations page with category tiles for Medical Devices, Hardware, Clean Tech, Agentic AI and Health Tech"
+      },
+      "caption": "Category-level navigation: top-bar links take visitors straight to each innovation area."
     },
     {
       "type": "comparison",
