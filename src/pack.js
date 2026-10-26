@@ -32,7 +32,8 @@ export function initPack(card, { team = {}, hero, header, flowParent }) {
   let moved = false; // true once the user has dragged it
 
   function bounds() {
-    const top = header.getBoundingClientRect().bottom - hero.getBoundingClientRect().top + GAP;
+    // The header is fixed, so use its height (its footprint over the hero at the top of the page).
+    const top = header.offsetHeight + GAP;
     return {
       minX: GAP,
       minY: Math.max(GAP, top),

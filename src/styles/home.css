@@ -1,14 +1,36 @@
 /* ---------- Header ---------- */
+/* Fixed so the logo and nav stay put while scrolling. The wordmark hides once the page leaves the top (src/main.js). */
 .site-header {
-  position: absolute;
+  position: fixed;
   inset: 0 0 auto;
-  z-index: 2;
+  z-index: 10;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
   gap: 16px;
-  padding: clamp(24px, 3vw, 56px) var(--edge) 0;
+  padding: clamp(24px, 3vw, 56px) var(--edge) 20px;
   padding-top: max(clamp(24px, 3vw, 56px), env(safe-area-inset-top, 0px));
+  pointer-events: none;
+}
+
+/* Soft white fade behind the header once scrolled, so it stays readable over content. */
+.site-header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(#fff 65%, rgb(255 255 255 / 0));
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+
+.site-header.is-scrolled::before {
+  opacity: 1;
+}
+
+.site-logo,
+.site-actions {
+  pointer-events: auto;
 }
 
 .site-logo {
@@ -30,6 +52,17 @@
   letter-spacing: 0.01em;
   line-height: 1;
   color: var(--c-tagline);
+  transition: opacity 0.25s var(--ease-out), transform 0.25s var(--ease-out), visibility 0.25s;
+}
+
+.site-logo__caps {
+  color: var(--c-strong);
+}
+
+.site-header.is-scrolled .site-logo__word {
+  visibility: hidden;
+  opacity: 0;
+  transform: translateX(-8px);
 }
 
 .site-actions {
@@ -308,7 +341,7 @@
   max-width: calc(var(--page-max) + 2 * var(--gutter));
   margin-inline: auto;
   padding: clamp(40px, 4.3vw, 86px) var(--gutter) clamp(120px, 15vw, 310px);
-  scroll-margin-top: 24px;
+  scroll-margin-top: var(--header-h, 24px);
 }
 
 .projects__filters {

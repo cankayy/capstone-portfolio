@@ -26,13 +26,20 @@ document.querySelector('[data-nav]').replaceChildren(
   ),
 );
 
+// Fixed header: hide the wordmark once the page leaves the top, and expose its height for scroll offsets.
+const header = document.querySelector('.site-header');
+const onScroll = () => header.classList.toggle('is-scrolled', scrollY > 0);
+addEventListener('scroll', onScroll, { passive: true });
+onScroll();
+new ResizeObserver(() => document.documentElement.style.setProperty('--header-h', `${header.offsetHeight}px`)).observe(header);
+
 /* ---------- Hero ---------- */
 document.querySelector('[data-tagline]').replaceChildren(...rich(site.tagline || ''));
 initGrid(document.querySelector('[data-grid]'));
 initPack(document.querySelector('[data-pack]'), {
   team: site.team,
   hero: document.querySelector('.hero'),
-  header: document.querySelector('.site-header'),
+  header,
   flowParent: document.querySelector('[data-hero-text]'),
 });
 initCursor();
