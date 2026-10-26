@@ -26,8 +26,8 @@
     {
       "type": "intro",
       "banner": {
-        "src": "/images/cheerful-ai/bento-dashboard.jpg",
-        "alt": "Cheerful AI dashboard with revenue, engagement, posts detected and opt-in rate above an active campaigns table and reach chart"
+        "src": "/images/cheerful-ai/banner-gradient.jpg",
+        "alt": "Soft orange, pink and purple gradient in Cheerful AI’s brand colors"
       },
       "title": "An agentic marketing platform for influencer campaigns",
       "summary": "An agentic marketing platform that helps agencies run influencer campaigns faster with AI. I designed the core screens, from the dashboard to the inbox, campaigns and creator search, then implemented them with Claude Code, replacing spreadsheets, Gmail and manual tracking with one product.",
