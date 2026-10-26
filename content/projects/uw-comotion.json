@@ -109,26 +109,18 @@
           "caption": "Expandable table format",
           "width": 1.33
         }
-      ]
+      ],
+      "headingSize": "md"
     },
     {
       "type": "feature",
-      "number": "02",
       "label": "Navigation and pathways",
       "heading": "A direct path to each innovation area.",
       "body": "A dedicated available-technologies subpage uses top-bar category links, so visitors can jump directly to the innovation areas they care about: medical devices, hardware, clean tech, agentic AI and health tech. Each technology entry combines a title, a concise description and a link to more details.",
       "bullets": [
         "Category-level navigation",
         "Structured technology entries"
-      ],
-      "media": [
-        {
-          "src": "/images/uw-comotion/technology-entries.png",
-          "alt": "Medical Devices section listing two technologies, each with an icon, title, short description and a Learn more button",
-          "frame": "browser"
-        }
-      ],
-      "side": "left"
+      ]
     },
     {
       "type": "image",
@@ -139,9 +131,19 @@
       "caption": "Category-level navigation: top-bar links take visitors straight to each innovation area."
     },
     {
+      "type": "image",
+      "media": {
+        "src": "/images/uw-comotion/technology-entries.png",
+        "alt": "Medical Devices section listing two technologies, each with an icon, title, short description and a Learn more button"
+      },
+      "caption": "Structured technology entries: each combines a title, a concise description and a link to more details."
+    },
+    {
       "type": "comparison",
+      "number": "02",
       "eyebrow": "Inventorship guide",
       "heading": "Making dense content easier to navigate.",
+      "headingSize": "md",
       "lead": "Patent-related material was reorganized into understandable web components. The process started with stakeholder conversations about priorities, then identified content categories and selected reusable web components.",
       "a": {
         "eyebrow": "Before",
@@ -155,20 +157,19 @@
       "b": {
         "eyebrow": "After",
         "heading": "Tabs for each topic",
-        "body": "Definitions are grouped into labeled tabs, such as “Who is an inventor?” and “Positions & Titles,” to support topic-based navigation.",
-        "media": {
-          "src": "/images/uw-comotion/inventorship-tabs.png",
-          "alt": "Definition of inventorship section with tabs for Who is an inventor, Who is not an inventor, and Positions & Titles"
-        }
+        "body": "Definitions are grouped into labeled tabs, such as “Who is an inventor?” and “Positions & Titles,” to support topic-based navigation. Accordions reveal secondary considerations on demand to reduce visual overload.",
+        "media": [
+          {
+            "src": "/images/uw-comotion/inventorship-tabs.png",
+            "alt": "Definition of inventorship section with tabs for Who is an inventor, Who is not an inventor, and Positions & Titles"
+          },
+          {
+            "src": "/images/uw-comotion/inventorship-accordions.png",
+            "alt": "Other important inventorship considerations shown as accordions, with Risks of incorrect inventorship expanded",
+            "size": "small"
+          }
+        ]
       }
-    },
-    {
-      "type": "image",
-      "media": {
-        "src": "/images/uw-comotion/inventorship-accordions.png",
-        "alt": "Other important inventorship considerations shown as accordions, with Risks of incorrect inventorship expanded"
-      },
-      "caption": "Accordions reveal secondary considerations on demand to reduce visual overload."
     },
     {
       "type": "feature",
@@ -190,11 +191,12 @@
     },
     {
       "type": "image",
+      "lead": "[View the interactive Figma prototype](https://www.figma.com/make/BYG56KnidZ5o52gcKTtoWa/Polish-Resource-Library-UI?t=bvUZB8Ol79p8nwEq-20&fullscreen=1)",
       "media": {
         "src": "/images/uw-comotion/resource-library-prototype.png",
         "alt": "Resource library prototype with Topics and Media Type filters in a sidebar and resource cards tagged Video, Article and Podcast"
       },
-      "caption": "The prototype reuses the existing design-system sidebar filter for familiar, consistent discovery, and shows topic and media-type tags on each card so visitors can judge relevance at a glance. [View the interactive Figma prototype](https://www.figma.com/make/BYG56KnidZ5o52gcKTtoWa/Polish-Resource-Library-UI?t=bvUZB8Ol79p8nwEq-20&fullscreen=1)"
+      "caption": "The prototype reuses the existing design-system sidebar filter for familiar, consistent discovery, and shows topic and media-type tags on each card so visitors can judge relevance at a glance."
     }
   ]
 }

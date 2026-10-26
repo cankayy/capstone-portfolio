@@ -23,14 +23,14 @@ One JSON file at `content/projects/<slug>.json` that follows `content/projects/_
 | Title, summary, roles, stage, platform, focus, hero photo | `intro` (always first) |
 | Problem statement, goal, or "what this project is" framing, often with 2–4 themes or principles | `overview` (themes become `pillars`) |
 | A key finding, feature, recommendation, screen or deliverable with its own explanation | `feature`, one per item, with `number` in order (01, 02…) |
-| Before/after, current vs proposed, old design vs new design, competitor vs ours | `comparison` |
+| Before/after, current vs proposed, old design vs new design, competitor vs ours | `comparison` (a side may stack several images; mark a secondary one `"size": "small"`) |
 | A method, research process, timeline or pipeline with ordered stages | `steps` (only for true sequences) |
 | Two contrasting responsibilities, perspectives or user groups | `split` |
 | Many visual artifacts: components, screens, style tiles, sketches, maps | `gallery` |
 | Tooling, prototypes or testing setups shown with 2 images and a short list | `media-pair` |
 | Tech stack, system diagram, data flow, or how parts of a solution connect | `architecture` (`tools` = stack pills, `flow` = 2–5 stages) |
 | Anything else worth keeping (budget breakdown, next steps, acknowledgements) | `text` |
-| A standalone large image or video | `image` |
+| A standalone large image or video | `image` (optional `lead` above it, e.g. a prototype link) |
 
 ## Writing rules
 

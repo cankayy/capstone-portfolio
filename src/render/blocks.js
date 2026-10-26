@@ -1,10 +1,10 @@
-import { h, text } from './dom.js';
+import { h, text, has } from './dom.js';
 
 /** Eyebrow + big italic heading + lead paragraph, shared by most section types. */
 export function sectionHead(s, cls = '') {
   const parts = [
-    text('p', 'cs-eyebrow', s.eyebrow),
-    text('h3', 'cs-display', s.heading),
+    text('p', 'cs-eyebrow', [s.number, s.eyebrow].filter(has).join(' ')),
+    text('h3', s.headingSize === 'md' ? 'cs-display cs-display--md' : 'cs-display', s.heading),
     text('p', 'cs-lead', s.lead),
   ].filter(Boolean);
   return parts.length ? h('header', { class: `cs-head ${cls}`.trim() }, parts) : null;

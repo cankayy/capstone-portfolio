@@ -393,6 +393,17 @@
   align-self: center;
 }
 
+.cs-compare__stack {
+  display: grid;
+  gap: 24px;
+  align-self: start;
+}
+
+.cs-compare__stack .is-small {
+  justify-self: center;
+  width: 72%;
+}
+
 .cs-compare__arrow {
   grid-column: 2;
   grid-row: 2;
@@ -595,6 +606,16 @@
 /* ---------- image ---------- */
 .cs-image__media {
   border-radius: var(--r-img);
+}
+
+/* A text-only feature followed by its screenshots, or screenshots in a row, read as one group. */
+.cs-feature.is-text-only + .cs-image,
+.cs-image + .cs-image {
+  margin-top: clamp(40px, 5vw, 72px);
+}
+
+.cs-image .cs-head + * {
+  margin-top: 24px;
 }
 
 .cs-image__media .ph {
