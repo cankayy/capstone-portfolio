@@ -230,6 +230,15 @@
   flex: none;
 }
 
+.pcard__logo {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: clamp(36px, 2.6vw, 52px);
+  object-fit: contain;
+  object-position: left center;
+}
+
 .pcard__summary {
   margin-top: auto;
   padding-top: 24px;

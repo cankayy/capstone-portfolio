@@ -7,6 +7,10 @@
   ],
   "card": {
     "shortName": "CoMotion",
+    "logo": {
+      "src": "/images/uw-comotion/comotion-logo.png",
+      "alt": "UW CoMotion, Your Innovation Partner"
+    },
     "summary": "Designing and building web experiences that help researchers, entrepreneurs and industry partners discover innovation resources and navigate complex programs, from a new program website to a restructured patent guide and a resource library prototype.",
     "tags": [
       "UX/UI Design",

@@ -10,6 +10,8 @@
     "_note": "Shown on the homepage card when this project is active in the list.",
     "shortName": "Short name",
     "icon": "/images/project-slug/icon.svg",
+    "logo": { "src": "/images/project-slug/logo.png", "alt": "Organization name" },
+    "_logo_note": "Optional. A wide logo image shown instead of the icon and short name. Trim extra whitespace around it.",
     "summary": "Two to four sentences. What the project is and the main outcome.",
     "tags": ["Product Management", "Information Management"],
     "image": { "src": "/images/project-slug/card.jpg", "alt": "Describe the image" }

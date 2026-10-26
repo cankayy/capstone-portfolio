@@ -100,12 +100,24 @@ export function initProjects(root, { projects, filters, onOpen }) {
       h(
         'div',
         { class: 'pcard__body' },
-        h(
-          'div',
-          { class: 'pcard__name' },
-          has(c.icon) && h('img', { class: 'pcard__icon', src: c.icon, alt: '', width: 40, height: 40, onerror: (e) => e.target.remove() }),
-          text('span', null, c.shortName || p.title),
-        ),
+        has(c.logo?.src)
+          ? // A logo replaces the icon and short name. If it fails to load, fall back to the name.
+            h(
+              'div',
+              { class: 'pcard__name' },
+              h('img', {
+                class: 'pcard__logo',
+                src: c.logo.src,
+                alt: c.logo.alt || c.shortName || p.title,
+                onerror: (e) => e.target.replaceWith(text('span', null, c.shortName || p.title)),
+              }),
+            )
+          : h(
+              'div',
+              { class: 'pcard__name' },
+              has(c.icon) && h('img', { class: 'pcard__icon', src: c.icon, alt: '', width: 40, height: 40, onerror: (e) => e.target.remove() }),
+              text('span', null, c.shortName || p.title),
+            ),
         text('p', 'pcard__summary', c.summary),
         tags.length > 0 && h('ul', { class: 'pcard__tags', 'aria-label': 'Disciplines' }, tags.map((t) => text('li', 'pill pill--sm', t))),
       ),
