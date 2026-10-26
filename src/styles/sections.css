@@ -624,8 +624,14 @@
 
 /* Optional lines above and below a section (`"rules": true`). */
 .cs-section.has-rules {
-  padding-block: clamp(48px, 6vw, 80px);
+  margin-top: clamp(28px, 3vw, 44px);
+  padding-block: clamp(28px, 3vw, 44px);
   border-block: 1px solid var(--c-line);
+}
+
+/* The lines already separate it, so the next section can sit closer. */
+.cs-section.has-rules + .cs-section {
+  margin-top: clamp(28px, 3vw, 44px);
 }
 
 /* Pillars with icons render as cards. */
@@ -635,28 +641,28 @@
 
 .cs-pillar.has-icon {
   position: relative;
-  padding: clamp(22px, 2.2vw, 32px);
+  padding: clamp(18px, 1.7vw, 26px);
   background: var(--c-soft);
   border-radius: var(--r-img);
 }
 
 .cs-pillar__icon {
   display: block;
-  width: 64px;
-  height: 64px;
-  padding: 14px;
+  width: 48px;
+  height: 48px;
+  padding: 11px;
   background: #fff;
   border-radius: 50%;
 }
 
 .cs-pillar.has-icon .cs-num {
   position: absolute;
-  top: clamp(22px, 2.2vw, 32px);
-  right: clamp(22px, 2.2vw, 32px);
+  top: clamp(18px, 1.7vw, 26px);
+  right: clamp(18px, 1.7vw, 26px);
 }
 
 .cs-pillar.has-icon .cs-item-title {
-  margin-top: clamp(28px, 3vw, 44px);
+  margin-top: 16px;
 }
 
 /* ---------- team (About modal) ---------- */
