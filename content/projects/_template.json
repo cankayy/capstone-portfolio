@@ -4,7 +4,7 @@
   "slug": "project-slug",
   "title": "Project Title",
   "order": 1,
-  "categories": ["Project Definition", "User Research", "UX/UI Design", "Front-End Development"],
+  "categories": ["Project Management", "User Research", "UX/UI Design", "Front-End Development"],
 
   "card": {
     "_note": "Shown on the homepage card when this project is active in the list.",
