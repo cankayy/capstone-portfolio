@@ -54,6 +54,7 @@ export function renderSections(sections, slug = '') {
     }
 
     const el = render(s, ctx);
+    if (el && s.rules === true) el.classList.add('has-rules');
     if (el && el.childElementCount > 0) nodes.push(el);
     prev = s.type;
   }

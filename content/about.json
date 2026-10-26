@@ -10,22 +10,27 @@
     },
     {
       "type": "overview",
+      "rules": true,
       "pillars": [
         {
           "title": "User research",
-          "text": "Interviews, media elicitation, journey mapping and qualitative analysis."
+          "text": "Interviews, media elicitation, journey mapping and qualitative analysis.",
+          "icon": "/images/about/research.svg"
         },
         {
           "title": "Data & business intelligence",
-          "text": "SQL, R, Python, GA4 and Tableau to measure what matters."
+          "text": "SQL, R, Python, GA4 and Tableau to measure what matters.",
+          "icon": "/images/about/data.svg"
         },
         {
           "title": "Product design",
-          "text": "0–1 product design, design systems and accessible web design in Figma."
+          "text": "0–1 product design, design systems and accessible web design in Figma.",
+          "icon": "/images/about/design.svg"
         },
         {
           "title": "Front-end development",
-          "text": "Rapid prototypes and MVPs, built and shipped in code."
+          "text": "Rapid prototypes and MVPs, built and shipped in code.",
+          "icon": "/images/about/code.svg"
         }
       ]
     },

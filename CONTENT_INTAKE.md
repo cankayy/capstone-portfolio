@@ -21,7 +21,7 @@ One JSON file at `content/projects/<slug>.json` that follows `content/projects/_
 | If the content contains… | Use |
 |---|---|
 | Title, summary, roles, stage, platform, focus, hero photo | `intro` (always first) |
-| Problem statement, goal, or "what this project is" framing, often with 2–4 themes or principles | `overview` (themes become `pillars`) |
+| Problem statement, goal, or "what this project is" framing, often with 2–4 themes or principles | `overview` (themes become `pillars`; give each an `icon` to show them as cards) |
 | A key finding, feature, recommendation, screen or deliverable with its own explanation | `feature`, one per item, with `number` in order (01, 02…) |
 | Before/after, current vs proposed, old design vs new design, competitor vs ours | `comparison` (a side may stack several images; mark a secondary one `"size": "small"`) |
 | A method, research process, timeline or pipeline with ordered stages | `steps` (only for true sequences) |

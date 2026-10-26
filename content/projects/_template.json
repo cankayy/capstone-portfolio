@@ -35,11 +35,12 @@
 
     {
       "type": "overview",
+      "_note": "Optional per pillar: 'icon' turns the pillars into cards with an icon. Any section can add \"rules\": true for lines above and below it.",
       "eyebrow": "Overview",
       "heading": "Big statement heading.",
       "lead": "Lead paragraph that frames the project.",
       "pillars": [
-        { "title": "Pillar one", "text": "One line." },
+        { "title": "Pillar one", "text": "One line.", "icon": "/images/project-slug/icon-1.svg" },
         { "title": "Pillar two", "text": "One line." },
         { "title": "Pillar three", "text": "One line." }
       ]

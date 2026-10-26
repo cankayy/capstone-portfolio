@@ -622,6 +622,43 @@
   aspect-ratio: 16 / 9;
 }
 
+/* Optional lines above and below a section (`"rules": true`). */
+.cs-section.has-rules {
+  padding-block: clamp(48px, 6vw, 80px);
+  border-block: 1px solid var(--c-line);
+}
+
+/* Pillars with icons render as cards. */
+.cs-pillars:has(.has-icon) {
+  gap: clamp(16px, 2vw, 24px);
+}
+
+.cs-pillar.has-icon {
+  position: relative;
+  padding: clamp(22px, 2.2vw, 32px);
+  background: var(--c-soft);
+  border-radius: var(--r-img);
+}
+
+.cs-pillar__icon {
+  display: block;
+  width: 64px;
+  height: 64px;
+  padding: 14px;
+  background: #fff;
+  border-radius: 50%;
+}
+
+.cs-pillar.has-icon .cs-num {
+  position: absolute;
+  top: clamp(22px, 2.2vw, 32px);
+  right: clamp(22px, 2.2vw, 32px);
+}
+
+.cs-pillar.has-icon .cs-item-title {
+  margin-top: clamp(28px, 3vw, 44px);
+}
+
 /* ---------- team (About modal) ---------- */
 .cs-team > li + li {
   margin-top: clamp(48px, 6vw, 80px);
