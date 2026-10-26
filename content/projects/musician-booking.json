@@ -1,0 +1,305 @@
+{
+  "slug": "musician-booking",
+  "title": "Musician Booking",
+  "order": 2,
+  "categories": [
+    "User Research"
+  ],
+  "card": {
+    "shortName": "Booking Shows",
+    "summary": "A qualitative study of how early-career, self-managed musicians in Seattle make themselves “bookable.” Through media elicitation and journey mapping with four musicians, we found that EPKs rarely get answers, short cold emails and Instagram DMs do, and long-term access is built through community and reputation rather than promotional materials.",
+    "tags": [
+      "User Research",
+      "Qualitative Research"
+    ],
+    "image": {
+      "src": "/images/musician-booking/guitarist.jpg",
+      "alt": "Black-and-white photo of a guitarist playing on stage, with a keyboardist behind"
+    }
+  },
+  "sections": [
+    {
+      "type": "intro",
+      "banner": {
+        "src": "/images/musician-booking/banner.jpg",
+        "alt": "Black-and-white photo of a band on a lit stage above a crowd with raised hands"
+      },
+      "title": "How independent musicians book shows",
+      "summary": "A qualitative study of how early-career, self-managed musicians in Seattle make themselves “bookable.” Through media elicitation and journey mapping with four musicians, we found that EPKs rarely get answers, short cold emails and Instagram DMs do, and long-term access is built through community and reputation rather than promotional materials.",
+      "meta": [
+        {
+          "label": "Role",
+          "value": "Lead User Researcher – Jaime"
+        },
+        {
+          "label": "Stage",
+          "value": "Qualitative research report"
+        },
+        {
+          "label": "Methods",
+          "value": "Media elicitation, journey mapping, affinity mapping"
+        },
+        {
+          "label": "Focus",
+          "value": "How musicians become “bookable”"
+        }
+      ],
+      "image": {
+        "src": "/images/musician-booking/guitarist.jpg",
+        "alt": "Black-and-white photo of a guitarist playing on stage, with a keyboardist behind"
+      }
+    },
+    {
+      "type": "overview",
+      "eyebrow": "Overview",
+      "heading": "Booking is labor that almost no one studies.",
+      "lead": "At the local scale, live music booking is almost entirely informal. There are no standard contracts, no published criteria and no official pathways. The managers and agents who once connected artists to venues have largely disappeared below the mainstream level, so self-management is now the default and all booking labor falls on the artist.",
+      "pillars": [
+        {
+          "title": "Trial, error & self-promotion",
+          "text": "Outreach is built through iteration, not guidance, and that learning carries a cost."
+        },
+        {
+          "title": "Reputation through respect",
+          "text": "Booking access accumulates through behavioral practice, not materials."
+        },
+        {
+          "title": "Venue pressures & preferences",
+          "text": "Economic pressure shapes where artists seek to perform."
+        },
+        {
+          "title": "Organic growth & community",
+          "text": "Informal networks do the work platforms were designed to do."
+        }
+      ]
+    },
+    {
+      "type": "feature",
+      "label": "Secondary research",
+      "heading": "The standards are real, but the feedback loop is broken.",
+      "body": "Our secondary research surfaced a catch-22: venues want proof of existing success, such as engaged followers and proven draw, before booking the artists who need those same gigs to build it. Advice content treats EPKs and polished materials as prerequisites, which favors artists who can afford professional photography and recording before ever getting paid.\n\nThe venue side of the relationship was almost entirely absent. Artists can only infer what venues want from the pattern of what fails.",
+      "bullets": [
+        "You need gigs to get gigs",
+        "“Professionalism” as class-based gatekeeping",
+        "Venues hold power; artists bear the labor",
+        "Booking framed as “investment,” not work"
+      ],
+      "media": [
+        {
+          "src": "/images/musician-booking/secondary-research.jpg",
+          "alt": "Diagram of four secondary research insights around a central node: booking framed as investment, professionalism as gatekeeping, you need gigs to get gigs, and venues hold power while artists bear the labor",
+          "frame": "none"
+        }
+      ]
+    },
+    {
+      "type": "feature",
+      "label": "Research question",
+      "heading": "How do aspiring musicians make themselves “bookable”?",
+      "body": "We asked where the demands of bookability conflict with musicians’ creative priorities and lived constraints. Artists must navigate two logics, often without knowing which one a venue is using: a formalization logic of EPKs, materials and standardized process, and a relationship logic of presence, trust and accumulated goodwill. Venues, meanwhile, select by audience draw and operational ease.",
+      "bullets": [
+        "What must artists do to get booked, and where do they stall?",
+        "How do venues evaluate artists, and how is that communicated?"
+      ],
+      "media": [
+        {
+          "src": "/images/musician-booking/structural-tension.jpg",
+          "alt": "The overarching research question above a diagram of the structural tension between formalization logic and relationship logic, with nested questions and four thematic areas",
+          "frame": "none"
+        }
+      ]
+    },
+    {
+      "type": "overview",
+      "eyebrow": "Participants",
+      "heading": "Four Seattle musicians at different stages.",
+      "lead": "Every participant was part of the Seattle music scene and handled their own booking. The range was intentional: one pre-debut perspective captured the process at its most opaque, while three experienced artists showed what it looks like after years of iteration.",
+      "pillars": [
+        {
+          "title": "P1 · Multi-instrumentalist",
+          "text": "Several years gigging; books for a band and as a sideman, with established venue relationships."
+        },
+        {
+          "title": "P2 · Concept-band founder",
+          "text": "Pre-debut, building an audience on Discord before any formal outreach."
+        },
+        {
+          "title": "P3 · Band frontperson",
+          "text": "Moved from rejected EPKs to venues reaching out directly."
+        },
+        {
+          "title": "P4 · Solo alternative artist",
+          "text": "Multi-year relationships with small venues, booked through Instagram messages."
+        }
+      ]
+    },
+    {
+      "type": "media-pair",
+      "eyebrow": "Research methods",
+      "heading": "We asked musicians to show us, not just tell us.",
+      "lead": "Media elicitation let participants walk us through the real emails and social media DMs they use, and journey mapping traced each step from seeking a gig to playing it. For P2, who had not yet booked a show, we adapted the journey map to capture the steps they planned to take.",
+      "items": [
+        {
+          "image": {
+            "src": "/images/musician-booking/media-artifacts.jpg",
+            "alt": "Collage of participants’ booking emails and Instagram direct messages, blurred for privacy"
+          },
+          "caption": "Participants’ media artifacts, including emails and social media DMs.",
+          "width": 1.3
+        },
+        {
+          "image": {
+            "src": "/images/musician-booking/journey-maps.jpg",
+            "alt": "Four journey maps of sticky notes, one per participant, tracing the stages of booking and playing a show"
+          },
+          "caption": "Journey maps for each participant, from a local bar gig to a first festival.",
+          "width": 1
+        }
+      ],
+      "list": [
+        {
+          "title": "Media elicitation",
+          "text": "Concrete evidence of the techniques and materials musicians use."
+        },
+        {
+          "title": "Journey mapping",
+          "text": "Revealed the distinct stages behind a successful show."
+        },
+        {
+          "title": "Affinity mapping",
+          "text": "Coded data grouped into themes, then developed into insights."
+        }
+      ]
+    },
+    {
+      "type": "feature",
+      "label": "Data analysis",
+      "heading": "From raw sessions to insights, together.",
+      "body": "We transcribed and coded the data from both methods, grouped the codes in an affinity map, identified themes and developed them into insights, then looked for the nuances and barriers within them.\n\nCollaborative affinity mapping showed us how much interpretation happens in analysis, and how much it benefits from multiple people in the room.",
+      "bullets": [
+        "Transcription and coding",
+        "Affinity mapping into themes",
+        "Insights, nuances and barriers"
+      ],
+      "media": [
+        {
+          "src": "/images/musician-booking/affinity-map.jpg",
+          "alt": "Affinity map with coded sticky notes grouped into themes on the left and developed into insights on the right",
+          "frame": "none"
+        }
+      ]
+    },
+    {
+      "type": "feature",
+      "number": "01",
+      "label": "Trial, error & self-promotion",
+      "heading": "Every artist relearns the same lessons alone.",
+      "body": "The most consistent pattern was abandoning the EPK, not because of advice, but from exhaustion. “We made, like, a bunch of EPKs, and nobody ever, ever, ever got back to us,” P3 said. In their place, participants independently landed on short cold emails: who I am, the music I make, why this venue, and a link.\n\nSocial media worked less as a way to reach fans and more as a passive portfolio that venues quietly check.",
+      "bullets": [
+        "Material comes before any outreach",
+        "EPKs abandoned for brief emails",
+        "Online presence as credibility"
+      ],
+      "media": [
+        {
+          "src": "/images/musician-booking/outreach-timeline.png",
+          "alt": "Timeline of an artist’s outreach from starting out, through heavy EPK investment and narrative emails, to brevity working and a stable strategy after years of shows",
+          "frame": "none"
+        }
+      ]
+    },
+    {
+      "type": "feature",
+      "number": "02",
+      "label": "Low-hassle venues",
+      "heading": "Smaller venues offer ease, and better audiences.",
+      "body": "Independent musicians gravitate toward smaller venues as a practical response to economic pressure. Larger venues often expect a guaranteed audience. Smaller spaces offer “a lot less pressure” (P3) and the comfort of knowing “exactly what you’re gonna get” (P1). House show and underground crowds also feel “a little bit more receptive,” and smaller venues let artists choose their own lineups.",
+      "bullets": [
+        "Less pressure, more predictability",
+        "More receptive audiences",
+        "Control over who shares the bill"
+      ]
+    },
+    {
+      "type": "feature",
+      "number": "03",
+      "label": "Community & connection",
+      "heading": "Gigs travel through people, not platforms.",
+      "body": "Musicians find opportunities through word of mouth, peer referrals and showing up until the right people know their name. “The music community here is so kind of ‘familial,’” P1 said. P4 brings bands on to play their first shows, because someone did that for them. Instagram DMs also work as a direct, efficient channel, but all of this relationship-building is invisible labor.",
+      "bullets": [
+        "Organic networking at shows",
+        "Informal channels and DMs",
+        "A mentorship cycle that repeats"
+      ],
+      "media": [
+        {
+          "src": "/images/musician-booking/community-flow.png",
+          "alt": "Flow chart of the local music community: community support, organic networking, informal channels and a mentorship cycle lead to gig opportunities, lasting impressions, shared opportunities and a self-sustaining ecosystem",
+          "frame": "none"
+        }
+      ]
+    },
+    {
+      "type": "feature",
+      "number": "04",
+      "label": "Respect & preparation",
+      "heading": "Reputation is built by how you treat people.",
+      "body": "Sustained access came down to two practices: technical preparedness (knowing setup needs, honoring set times) and interpersonal respect (thanking venue staff, being easy to work with under pressure). “Word travels,” P1 said. Artists who did both saw venues start reaching out to them, and booking shifted from building new relationships to maintaining existing ones.",
+      "bullets": [
+        "Arrive ready and on time",
+        "Thank venues and fellow bands",
+        "Venues begin calling you"
+      ]
+    },
+    {
+      "type": "overview",
+      "eyebrow": "Takeaways",
+      "heading": "The gap between what artists prepare and what venues want.",
+      "lead": "Artists are told to prepare polished materials. Venues are looking for draw, reliability and ease of coordination. Neither side communicates this, so artists discover the gap only through accumulated failure, and the cost falls unevenly on those without people who already know how the system works.",
+      "pillars": [
+        {
+          "title": "Preparation vs. venue needs",
+          "text": "Artists learn venue preferences and norms through trial and error."
+        },
+        {
+          "title": "Practical and personal",
+          "text": "Smaller venues offer freedom and access, but limited reach and revenue."
+        },
+        {
+          "title": "Behavior over material",
+          "text": "Long-term access comes from conduct, not promotional materials."
+        },
+        {
+          "title": "Informal networks",
+          "text": "Word of mouth does the work formal channels were designed to do."
+        }
+      ]
+    },
+    {
+      "type": "split",
+      "columns": [
+        {
+          "eyebrow": "Design implications",
+          "heading": "Make the unwritten rules visible",
+          "body": "Surfacing what gets a response, what venues quietly check and what conduct gets you re-booked would shorten a learning curve that takes years. Tools that meet artists at the pre-debut stage, with templates, examples and progression markers instead of metrics they cannot yet produce, would serve a population current platforms largely ignore."
+        },
+        {
+          "eyebrow": "Open questions",
+          "heading": "What we would study next",
+          "body": "What would lower the barrier to a first confirmed show without depending on venues to change? What do bookers actually respond to, and does it match what artists figured out alone? And who does the trial-and-error cycle hit hardest?"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "eyebrow": "Reflection",
+      "heading": "Our assumptions shifted along the way.",
+      "body": "We expected EPKs to be artists’ main material, but they relied on a mix of social media, videos and one-sheets. We assumed artists strive for larger venues, yet they preferred smaller ones. And we assumed a following was the key to getting gigs, but community and engagement with the scene played just as large a role.\n\nThe study has clear limits: four participants, all in Seattle and focused on alternative and rock genres. Venue bookers were not interviewed, and artists who stopped trying are not represented."
+    },
+    {
+      "type": "text",
+      "eyebrow": "Team",
+      "body": "HCDE 519: Cannon, Jaime, Maggie and Kazarina."
+    }
+  ]
+}

@@ -332,6 +332,18 @@
   padding: clamp(16px, 2.4vw, 32px);
 }
 
+/* Tall figures (timelines, maps) stay a reasonable height instead of stretching the section. */
+.cs-feature__media .frame--none {
+  width: auto;
+  max-width: 100%;
+}
+
+.cs-feature__media .frame--none > img {
+  width: auto;
+  max-width: 100%;
+  max-height: min(80vh, 720px);
+}
+
 .cs-feature__media:has(.frame--none) .frame--none {
   border: 1px solid var(--c-line);
 }
