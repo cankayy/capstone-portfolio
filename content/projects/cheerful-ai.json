@@ -8,14 +8,18 @@
   ],
   "card": {
     "shortName": "Cheerful AI",
+    "logo": {
+      "src": "/images/cheerful-ai/cheerful-logo.png",
+      "alt": "Cheerful AI"
+    },
     "summary": "An agentic marketing platform that helps agencies run influencer campaigns faster with AI. I designed the core screens, from the dashboard to the inbox, campaigns and creator search, then implemented them with Claude Code, replacing spreadsheets, Gmail and manual tracking with one product.",
     "tags": [
       "UX Engineering",
       "Claude Code"
     ],
     "image": {
-      "src": "/images/cheerful-ai/card.jpg",
-      "alt": "Cheerful AI dashboard showing total revenue, engagement rate, active campaigns and a reach chart"
+      "src": "/images/cheerful-ai/card-laptop.jpg",
+      "alt": "Person using a laptop showing the Cheerful AI assistant screen, “Welcome, how can I help?”, on a gradient background"
     }
   },
   "sections": [
