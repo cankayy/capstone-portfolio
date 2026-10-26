@@ -112,6 +112,11 @@
   aspect-ratio: 4 / 3;
 }
 
+/* Real images in panels keep their own proportions; nothing gets cropped. */
+.cs-panel-media > img {
+  height: auto;
+}
+
 /* ---------- intro ---------- */
 .cs-intro__banner {
   height: clamp(180px, 24vw, 300px);
@@ -286,7 +291,10 @@
   box-shadow: 0 20px 40px rgb(0 0 0 / 0.1);
 }
 
-.frame--browser > img,
+.frame--browser > img {
+  height: auto;
+}
+
 .frame--browser > .ph {
   height: auto;
   aspect-ratio: 16 / 10;
@@ -316,6 +324,12 @@
   min-height: 0;
   padding: 0;
   background: none;
+}
+
+/* Website screenshots in a browser frame: a slimmer panel so the screenshot stays readable. */
+.cs-feature__media:has(.frame--browser) {
+  min-height: 0;
+  padding: clamp(16px, 2.4vw, 32px);
 }
 
 .cs-feature__media:has(.frame--none) .frame--none {
@@ -361,6 +375,10 @@
 
 .cs-compare__col .cs-panel-media .ph {
   aspect-ratio: 4 / 5;
+}
+
+.cs-compare__col > .cs-panel-media {
+  align-self: center;
 }
 
 .cs-compare__arrow {

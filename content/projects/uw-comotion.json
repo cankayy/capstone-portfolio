@@ -1,167 +1,188 @@
 {
-  "_readme": "Placeholder project so the list, filters and modal can be tested. Replace with real content using CONTENT_INTAKE.md.",
   "slug": "uw-comotion",
-  "title": "UW Comotion",
+  "title": "UW CoMotion",
   "order": 3,
   "categories": [
-    "Project Definition",
-    "User Research",
     "UX/UI Design"
   ],
   "card": {
-    "shortName": "Comotion",
-    "summary": "[Placeholder] Two to four sentences about UW Comotion: what the team studied or built, and the main outcome.",
+    "shortName": "CoMotion",
+    "summary": "Designing and building web experiences that help researchers, entrepreneurs and industry partners discover innovation resources and navigate complex programs, from a new program website to a restructured patent guide and a resource library prototype.",
     "tags": [
-      "User Research",
-      "Product Strategy"
+      "UX/UI Design",
+      "WordPress"
     ],
     "image": {
-      "src": "",
-      "alt": "UW Comotion cover image"
+      "src": "/images/uw-comotion/resource-library-prototype.png",
+      "alt": "Resource library prototype with a topic and media-type filter sidebar and tagged resource cards"
     }
   },
   "sections": [
     {
       "type": "intro",
       "banner": {
-        "src": "",
-        "alt": "UW Comotion banner image"
+        "src": "/images/uw-comotion/category-nav.png",
+        "alt": "CASCADE innovations page with category tiles for Medical Devices, Hardware, Clean Tech, Agentic AI and Health Tech"
       },
-      "title": "UW Comotion",
-      "summary": "[Placeholder] One paragraph summary of the project, the problem it addresses and the result.",
+      "title": "Improving digital experiences at UW CoMotion",
+      "summary": "Designing and building web experiences that help researchers, entrepreneurs and industry partners discover innovation resources and navigate complex programs, from a new program website to a restructured patent guide and a resource library prototype.",
       "meta": [
         {
           "label": "Role",
-          "value": "[Placeholder] Value"
+          "value": "UX Designer – Lavender"
         },
         {
-          "label": "Stage",
-          "value": "[Placeholder] Value"
+          "label": "Organization",
+          "value": "CoMotion / UW"
         },
         {
           "label": "Platform",
-          "value": "[Placeholder] Value"
+          "value": "Website (WordPress)"
         },
         {
-          "label": "Focus",
-          "value": "[Placeholder] Value"
-        }
-      ],
-      "image": {
-        "src": "",
-        "alt": "UW Comotion hero image"
-      }
-    },
-    {
-      "type": "overview",
-      "eyebrow": "Overview",
-      "heading": "[Placeholder] What this project set out to do.",
-      "lead": "[Placeholder] Lead paragraph that frames the project.",
-      "pillars": [
-        {
-          "title": "[Placeholder] Discover",
-          "text": "[Placeholder] One line."
-        },
-        {
-          "title": "[Placeholder] Define",
-          "text": "[Placeholder] One line."
-        },
-        {
-          "title": "[Placeholder] Deliver",
-          "text": "[Placeholder] One line."
-        },
-        {
-          "title": "[Placeholder] Measure",
-          "text": "[Placeholder] One line."
+          "label": "Tools",
+          "value": "Figma · WordPress · GA4"
         }
       ]
     },
     {
-      "type": "steps",
-      "eyebrow": "Research method",
-      "intro": "[Placeholder] How we ran the study, from recruiting to synthesis.",
-      "steps": [
+      "type": "overview",
+      "eyebrow": "Selected work",
+      "heading": "Three projects that make complex content easy to find.",
+      "lead": "Each project took dense or scattered information and turned it into web pages that visitors can scan, navigate and act on.",
+      "pillars": [
         {
-          "title": "[Placeholder] Recruit",
-          "text": "[Placeholder] One line."
+          "title": "New program website",
+          "text": "Transforming program requirements into a navigable, scannable online experience."
         },
         {
-          "title": "[Placeholder] Interview",
-          "text": "[Placeholder] One line."
+          "title": "Complex information redesign",
+          "text": "Restructuring patent-related content through tabs and expandable sections."
         },
         {
-          "title": "[Placeholder] Synthesize",
-          "text": "[Placeholder] One line."
-        },
-        {
-          "title": "[Placeholder] Prioritize",
-          "text": "[Placeholder] One line."
-        },
-        {
-          "title": "[Placeholder] Test",
-          "text": "[Placeholder] One line."
-        },
-        {
-          "title": "[Placeholder] Report",
-          "text": "[Placeholder] One line."
+          "title": "Centralized resource library",
+          "text": "Exploring filters, tags and consistent patterns for content discovery."
         }
       ]
     },
     {
       "type": "feature",
       "number": "01",
-      "label": "[Placeholder] Label",
-      "heading": "[Placeholder] A short feature heading.",
-      "body": "[Placeholder] One or two short paragraphs explaining this finding or deliverable.",
+      "label": "CASCADE program site",
+      "heading": "Designing a new program website.",
+      "body": "A new program, CASCADE, needed to communicate its purpose, value, eligibility and opportunities to several audiences. The approach was a clear information hierarchy, with relevant components and navigation paths that help visitors find details.\n\nThe overview organizes eligibility, required materials and available technologies into distinct cards, so each audience can scan for what applies to them.",
       "bullets": [
-        "[Placeholder] Point one",
-        "[Placeholder] Point two"
+        "Clear information hierarchy",
+        "Scannable cards for each audience question"
       ],
       "media": [
         {
-          "src": "",
-          "alt": "Screen 1",
-          "frame": "phone"
+          "src": "/images/uw-comotion/overview-cards.png",
+          "alt": "CASCADE overview with three cards: Eligibility (Who can apply?), Materials (What do I need to submit?) and Innovations (What is available?)",
+          "frame": "browser"
+        }
+      ]
+    },
+    {
+      "type": "media-pair",
+      "eyebrow": "Timeline accessibility",
+      "heading": "One schedule, two ways to read it.",
+      "lead": "The visual timeline is paired with an expandable table format that offers a structured alternative. Both views communicate the schedule while supporting different reading preferences.",
+      "items": [
+        {
+          "image": {
+            "src": "/images/uw-comotion/visual-timeline.png",
+            "alt": "Visual screening and program timeline with dated purple milestone markers"
+          },
+          "caption": "Visual timeline",
+          "width": 1
+        },
+        {
+          "image": {
+            "src": "/images/uw-comotion/timeline-table.png",
+            "alt": "The same screening timeline as an expandable two-column table of dates and events"
+          },
+          "caption": "Expandable table format",
+          "width": 1.33
         }
       ]
     },
     {
       "type": "feature",
       "number": "02",
-      "label": "[Placeholder] Label",
-      "heading": "[Placeholder] A short feature heading.",
-      "body": "[Placeholder] One or two short paragraphs explaining this finding or deliverable.",
+      "label": "Navigation and pathways",
+      "heading": "A direct path to each innovation area.",
+      "body": "A dedicated available-technologies subpage uses top-bar category links, so visitors can jump directly to the innovation areas they care about: medical devices, hardware, clean tech, agentic AI and health tech. Each technology entry combines a title, a concise description and a link to more details.",
       "bullets": [
-        "[Placeholder] Point one",
-        "[Placeholder] Point two"
+        "Category-level navigation",
+        "Structured technology entries"
       ],
       "media": [
         {
-          "src": "",
-          "alt": "Screen 2",
-          "frame": "phone"
-        },
+          "src": "/images/uw-comotion/technology-entries.png",
+          "alt": "Medical Devices section listing two technologies, each with an icon, title, short description and a Learn more button",
+          "frame": "browser"
+        }
+      ],
+      "side": "left"
+    },
+    {
+      "type": "comparison",
+      "eyebrow": "Inventorship guide",
+      "heading": "Making dense content easier to navigate.",
+      "lead": "Patent-related material was reorganized into understandable web components. The process started with stakeholder conversations about priorities, then identified content categories and selected reusable web components.",
+      "a": {
+        "eyebrow": "Before",
+        "heading": "Dense source document",
+        "body": "A dense source document made it difficult to find specific information quickly.",
+        "media": {
+          "src": "/images/uw-comotion/dense-source.png",
+          "alt": "Excerpt from the dense source document: long paragraphs defining inventorship, conception and joint inventorship"
+        }
+      },
+      "b": {
+        "eyebrow": "After",
+        "heading": "Tabs for each topic",
+        "body": "Definitions are grouped into labeled tabs, such as “Who is an inventor?” and “Positions & Titles,” to support topic-based navigation.",
+        "media": {
+          "src": "/images/uw-comotion/inventorship-tabs.png",
+          "alt": "Definition of inventorship section with tabs for Who is an inventor, Who is not an inventor, and Positions & Titles"
+        }
+      }
+    },
+    {
+      "type": "image",
+      "media": {
+        "src": "/images/uw-comotion/inventorship-accordions.png",
+        "alt": "Other important inventorship considerations shown as accordions, with Risks of incorrect inventorship expanded"
+      },
+      "caption": "Accordions reveal secondary considerations on demand to reduce visual overload."
+    },
+    {
+      "type": "feature",
+      "number": "03",
+      "label": "Resource library",
+      "heading": "Exploring a centralized resource library.",
+      "body": "Resources were scattered across the CoMotion website, and stakeholders wanted a centralized library organized into categories. Meetings with stakeholders covered target users, content types and presentation needs, alongside a review of existing design patterns. An early sketch explored how training content could be grouped and organized within the library.",
+      "bullets": [
+        "Sidebar filters from the design system",
+        "Topic and media-type tags on cards"
+      ],
+      "media": [
         {
-          "src": "",
-          "alt": "Screen 2b",
-          "frame": "phone"
+          "src": "/images/uw-comotion/whiteboard-sketch.jpg",
+          "alt": "Whiteboard sketch grouping innovation training and sessions into categories that branch into videos, readings and blogs",
+          "frame": "none"
         }
       ]
     },
     {
-      "type": "split",
-      "columns": [
-        {
-          "eyebrow": "Founders",
-          "heading": "[Placeholder] What founders need",
-          "body": "[Placeholder] Short paragraph."
-        },
-        {
-          "eyebrow": "Mentors",
-          "heading": "[Placeholder] What mentors need",
-          "body": "[Placeholder] Short paragraph."
-        }
-      ]
+      "type": "image",
+      "media": {
+        "src": "/images/uw-comotion/resource-library-prototype.png",
+        "alt": "Resource library prototype with Topics and Media Type filters in a sidebar and resource cards tagged Video, Article and Podcast"
+      },
+      "caption": "The prototype reuses the existing design-system sidebar filter for familiar, consistent discovery, and shows topic and media-type tags on each card so visitors can judge relevance at a glance. [View the interactive Figma prototype](https://www.figma.com/make/BYG56KnidZ5o52gcKTtoWa/Polish-Resource-Library-UI?t=bvUZB8Ol79p8nwEq-20&fullscreen=1)"
     }
   ]
 }
