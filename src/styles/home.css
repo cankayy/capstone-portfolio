@@ -12,8 +12,11 @@
 }
 
 .site-logo {
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: clamp(8px, 0.8vw, 14px);
   border-radius: 8px;
+  text-decoration: none;
 }
 
 .site-logo img {
@@ -21,8 +24,38 @@
   height: auto;
 }
 
-.site-nav {
+.site-logo__word {
+  font-size: clamp(24px, 1.9vw, 34px);
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  line-height: 1;
+  color: var(--c-tagline);
+}
+
+.site-actions {
+  display: flex;
+  align-items: stretch;
+  gap: 12px;
   margin-top: 10px;
+}
+
+.site-sponsor {
+  display: flex;
+  align-items: center;
+  padding: 0 clamp(16px, 1.4vw, 26px);
+  background: #111;
+  border: 1px solid #111;
+  border-radius: var(--r-pill);
+  color: #fff;
+  font-size: clamp(14px, 1.1vw, 16px);
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background-color 0.15s;
+}
+
+.site-sponsor:hover {
+  background: #333;
 }
 
 .site-nav__list {
@@ -88,6 +121,187 @@
   font-weight: 700;
   color: var(--c-tagline-strong);
 }
+
+.hero__badge {
+  display: inline-block;
+  margin-top: clamp(14px, 1.2vw, 20px);
+  padding: 7px 16px;
+  background: rgb(242 242 242 / 0.92);
+  border: 1px solid #ebebeb;
+  border-radius: var(--r-pill);
+  font-size: 13px;
+  line-height: 1.3;
+  color: #444;
+}
+
+/* ---------- Meet the Pack card ---------- */
+.pack {
+  position: relative;
+  z-index: 1;
+  width: max-content;
+  touch-action: none;
+  user-select: none;
+}
+
+.pack.is-floating {
+  position: absolute;
+  top: 0;
+  left: 0;
+  will-change: transform;
+}
+
+.pack[data-native-cursor],
+.has-custom-cursor .pack[data-native-cursor],
+.has-custom-cursor .pack[data-native-cursor] * {
+  cursor: grab !important;
+}
+
+.pack.is-dragging,
+.has-custom-cursor .pack.is-dragging,
+.has-custom-cursor .pack.is-dragging * {
+  cursor: grabbing !important;
+}
+
+.has-custom-cursor .pack[data-native-cursor] :is(a, button),
+.has-custom-cursor .pack[data-native-cursor] :is(a, button) * {
+  cursor: none !important;
+}
+
+.pack__box {
+  width: clamp(340px, 26vw, 420px);
+  padding: 14px 16px 16px;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid #d4d4d4;
+  border-radius: var(--r-card);
+  transition: border-radius 0.22s var(--ease-out), box-shadow 0.2s;
+}
+
+.pack.is-dragging .pack__box {
+  box-shadow: 0 12px 32px rgb(0 0 0 / 0.1);
+}
+
+.pack__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.pack__title {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.pack__toggle {
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  margin: -6px -6px -6px 0;
+  border-radius: 50%;
+  color: #333;
+  transition: background-color 0.15s;
+}
+
+.pack__toggle:hover {
+  background: var(--c-soft);
+}
+
+.pack__toggle svg path {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+
+.pack__toggle-v {
+  display: none;
+}
+
+.pack__team {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.pack__member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.pack__photo {
+  width: 100%;
+  max-width: 80px;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 50%;
+  background: var(--c-placeholder);
+  pointer-events: none;
+  -webkit-user-drag: none;
+}
+
+.pack__photo.is-missing {
+  color: transparent;
+}
+
+.pack__more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  margin-top: 14px;
+  padding: 7px 16px;
+  border: 1px solid #d4d4d4;
+  border-radius: var(--r-pill);
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--c-text);
+  text-decoration: none;
+  transition: border-color 0.15s, background-color 0.15s;
+}
+
+.pack__more:hover {
+  border-color: #999;
+  background: #fafafa;
+}
+
+.pack.is-collapsed .pack__box {
+  width: auto;
+  padding: 10px 14px 10px 18px;
+  border-radius: var(--r-pill);
+}
+
+.pack.is-collapsed .pack__body {
+  display: none;
+}
+
+.pack.is-collapsed .pack__toggle-v {
+  display: inline;
+}
+
+.pack__handle {
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  background: #fff;
+  border: 1px solid #bdbdbd;
+  pointer-events: none;
+}
+
+.pack__handle--tl { top: -5px; left: -5px; }
+.pack__handle--tr { top: -5px; right: -5px; }
+.pack__handle--bl { bottom: -5px; left: -5px; }
+.pack__handle--br { bottom: -5px; right: -5px; }
 
 /* ---------- Projects ---------- */
 .projects {
@@ -340,6 +554,30 @@
 }
 
 @media (max-width: 639.98px) {
+  /* Logo and Sponsor Us share the first row, the nav pill gets its own row. */
+  .site-header {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 14px;
+  }
+
+  .site-actions {
+    display: contents;
+  }
+
+  .site-sponsor {
+    grid-area: 1 / 2;
+    padding: 10px 16px;
+  }
+
+  .site-nav {
+    grid-column: 1 / -1;
+    justify-self: start;
+    margin-top: 0;
+  }
+
   .site-nav a {
     padding: 10px 10px;
   }
@@ -389,5 +627,46 @@
   .site-footer {
     flex-direction: column;
     align-items: flex-start;
+  }
+}
+
+/* Meet the Pack card: in normal flow under the tagline, no dragging. Matches SMALL in src/pack.js. */
+@media (max-width: 767.98px) {
+  .hero {
+    height: auto;
+    min-height: clamp(520px, 70vh, 720px);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero__inner {
+    flex: 1;
+    height: auto;
+    padding: clamp(120px, 30vw, 150px) var(--gutter) 48px;
+  }
+
+  .pack__member {
+    font-size: 12px;
+  }
+
+  .pack {
+    width: 100%;
+    max-width: 420px;
+    margin-top: 28px;
+    touch-action: auto;
+  }
+
+  .pack__box {
+    width: auto;
+  }
+
+  .pack.is-collapsed {
+    width: max-content;
+  }
+}
+
+@media (max-width: 639.98px) {
+  .hero__inner {
+    padding-top: 172px;
   }
 }

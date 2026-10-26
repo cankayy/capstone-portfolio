@@ -1,5 +1,31 @@
 {
   "tagline": "We *define* the product, *learn* from users, *design* every screen, and *ship* it in code.",
+  "team": {
+    "_note": "Hero 'Meet the Pack' card. Photos live in public/images/team/ (square, about 240px).",
+    "members": [
+      {
+        "name": "Jaime",
+        "photo": "/images/team/jaime.jpg"
+      },
+      {
+        "name": "Athan",
+        "photo": "/images/team/athan.jpg"
+      },
+      {
+        "name": "Cannon",
+        "photo": "/images/team/cannon.jpg"
+      },
+      {
+        "name": "Lavender",
+        "photo": "/images/team/lavender.jpg"
+      }
+    ],
+    "link": {
+      "label": "Learn More",
+      "href": "/team-resume.pdf",
+      "external": true
+    }
+  },
   "nav": [
     {
       "label": "Projects",

@@ -13,20 +13,45 @@
   </head>
   <body>
     <header class="site-header">
-      <a class="site-logo" href="#top" aria-label="Back to top">
+      <a class="site-logo" href="#top" aria-label="JACkaL, back to top">
         <img src="/logo.png" alt="" width="58" height="80" />
+        <span class="site-logo__word" aria-hidden="true">JACkaL</span>
       </a>
-      <nav class="site-nav" aria-label="Main">
-        <ul class="site-nav__list" data-nav></ul>
-      </nav>
+      <div class="site-actions">
+        <nav class="site-nav" aria-label="Main">
+          <ul class="site-nav__list" data-nav></ul>
+        </nav>
+        <a class="site-sponsor" href="mailto:athanc@uw.edu,c4nnkayy@uw.edu,hchang42@uw.edu,jserra2@uw.edu?subject=Sponsorship%20Inquiry">Sponsor Us</a>
+      </div>
     </header>
 
     <main id="top">
       <section class="hero" aria-label="Introduction">
         <canvas class="hero__grid" aria-hidden="true" data-grid></canvas>
         <div class="hero__inner">
-          <h1 class="hero__tagline" data-tagline></h1>
+          <div class="hero__text" data-hero-text>
+            <h1 class="hero__tagline" data-tagline></h1>
+            <p class="hero__badge">University of Washington · Capstone 2026–27</p>
+          </div>
         </div>
+        <aside class="pack" aria-labelledby="pack-title" data-pack>
+          <div class="pack__box">
+            <div class="pack__head">
+              <h2 class="pack__title" id="pack-title">Meet the Pack</h2>
+              <button class="pack__toggle" type="button" aria-label="Minimize team card" aria-expanded="true" aria-controls="pack-body" data-pack-toggle>
+                <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path class="pack__toggle-h" d="M2 8h12" /><path class="pack__toggle-v" d="M8 2v12" /></svg>
+              </button>
+            </div>
+            <div class="pack__body" id="pack-body">
+              <ul class="pack__team" data-pack-team></ul>
+              <a class="pack__more" data-pack-more>Learn More <span aria-hidden="true">→</span></a>
+            </div>
+          </div>
+          <span class="pack__handle pack__handle--tl" aria-hidden="true"></span>
+          <span class="pack__handle pack__handle--tr" aria-hidden="true"></span>
+          <span class="pack__handle pack__handle--bl" aria-hidden="true"></span>
+          <span class="pack__handle pack__handle--br" aria-hidden="true"></span>
+        </aside>
       </section>
 
       <section class="projects" id="projects" aria-labelledby="projects-heading">

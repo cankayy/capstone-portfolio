@@ -10,6 +10,7 @@ import { initGrid } from './grid.js';
 import { initProjects } from './projects-list.js';
 import { initModal } from './modal.js';
 import { initCursor } from './cursor.js';
+import { initPack } from './pack.js';
 
 // Every content/projects/*.json is a project, except files starting with "_".
 const files = import.meta.glob(['/content/projects/*.json', '!/content/projects/_*.json'], { eager: true, import: 'default' });
@@ -28,6 +29,12 @@ document.querySelector('[data-nav]').replaceChildren(
 /* ---------- Hero ---------- */
 document.querySelector('[data-tagline]').replaceChildren(...rich(site.tagline || ''));
 initGrid(document.querySelector('[data-grid]'));
+initPack(document.querySelector('[data-pack]'), {
+  team: site.team,
+  hero: document.querySelector('.hero'),
+  header: document.querySelector('.site-header'),
+  flowParent: document.querySelector('[data-hero-text]'),
+});
 initCursor();
 
 /* ---------- Footer ---------- */

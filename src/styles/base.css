@@ -155,6 +155,10 @@ a {
   opacity: 1;
 }
 
+.cursor.is-visible.is-native {
+  opacity: 0;
+}
+
 .cursor::before {
   content: "";
   position: absolute;

@@ -3,6 +3,8 @@
 // Share of the remaining distance covered per 60fps frame. Lower = slower, floatier follow.
 const FOLLOW = 0.16;
 const INTERACTIVE = 'a, button, [role="button"]';
+// Areas that show the system grab cursor instead of the dot (e.g. the draggable team card).
+const NATIVE = '[data-native-cursor]';
 
 const FINE = matchMedia('(hover: hover) and (pointer: fine)');
 const REDUCED = matchMedia('(prefers-reduced-motion: reduce)');
@@ -46,7 +48,9 @@ export function initCursor() {
       raf = requestAnimationFrame(tick);
     }
     dot.classList.add('is-visible');
-    dot.classList.toggle('is-hover', Boolean(e.target.closest?.(INTERACTIVE)));
+    const interactive = Boolean(e.target.closest?.(INTERACTIVE));
+    dot.classList.toggle('is-hover', interactive);
+    dot.classList.toggle('is-native', !interactive && Boolean(e.target.closest?.(NATIVE)));
   }
 
   const onDown = () => dot.classList.add('is-down');
