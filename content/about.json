@@ -6,24 +6,27 @@
     {
       "type": "intro",
       "title": "About JACkaL",
-      "summary": "We’re four Information Management graduate students covering user research, data and business intelligence, product design and front-end development, so your project goes from first interviews to a measurable prototype with one team.",
-      "meta": [
-        { "label": "Program", "value": "Information Management, University of Washington" },
-        { "label": "Capstone", "value": "2026–27" },
-        { "label": "Team", "value": "Jaime, Athan, Cannon, Lavender" },
-        { "label": "Resume", "value": "[Team resume (PDF)](/team-resume.pdf)" }
-      ]
+      "summary": "We’re four Information Management graduate students covering user research, data and business intelligence, product design and front-end development, so your project goes from first interviews to a measurable prototype with one team."
     },
     {
       "type": "overview",
-      "eyebrow": "What we cover",
-      "heading": "From first interviews to a measurable prototype.",
-      "lead": "Each of us leads a different part of the work, so research, data, design and code stay connected from start to finish.",
       "pillars": [
-        { "title": "User research", "text": "Interviews, media elicitation, journey mapping and qualitative analysis." },
-        { "title": "Data & business intelligence", "text": "SQL, R, Python, GA4 and Tableau to measure what matters." },
-        { "title": "Product design", "text": "0–1 product design, design systems and accessible web design in Figma." },
-        { "title": "Front-end development", "text": "Rapid prototypes and MVPs, built and shipped in code." }
+        {
+          "title": "User research",
+          "text": "Interviews, media elicitation, journey mapping and qualitative analysis."
+        },
+        {
+          "title": "Data & business intelligence",
+          "text": "SQL, R, Python, GA4 and Tableau to measure what matters."
+        },
+        {
+          "title": "Product design",
+          "text": "0–1 product design, design systems and accessible web design in Figma."
+        },
+        {
+          "title": "Front-end development",
+          "text": "Rapid prototypes and MVPs, built and shipped in code."
+        }
       ]
     },
     {
@@ -35,14 +38,28 @@
         {
           "name": "Jaime",
           "role": "User research & data analysis",
-          "photo": { "src": "/images/team/jaime.jpg", "alt": "Portrait of Jaime" },
+          "photo": {
+            "src": "/images/team/jaime.jpg",
+            "alt": "Portrait of Jaime"
+          },
           "email": "jserra2@uw.edu",
           "linkedin": "http://www.linkedin.com/in/jaime-serrano-248327239",
           "bio": "Jaime brings user research and data analysis to the team, from geospatial analysis in ArcGIS to statistical work in R and Python, and turns findings into prototypes in Figma.",
-          "skills": ["User research", "Data analysis (R, Python)", "Geospatial analysis (ArcGIS)", "Prototyping (Figma)"],
+          "skills": [
+            "User research",
+            "Data analysis (R, Python)",
+            "Geospatial analysis (ArcGIS)",
+            "Prototyping (Figma)"
+          ],
           "experience": [
-            { "title": "Research Analyst", "org": "University of Washington" },
-            { "title": "Research Assistant", "org": "University of Washington" }
+            {
+              "title": "Research Analyst",
+              "org": "University of Washington"
+            },
+            {
+              "title": "Research Assistant",
+              "org": "University of Washington"
+            }
           ],
           "links": [
             {
@@ -54,14 +71,28 @@
         {
           "name": "Athan",
           "role": "Project management & business intelligence",
-          "photo": { "src": "/images/team/athan.jpg", "alt": "Portrait of Athan" },
+          "photo": {
+            "src": "/images/team/athan.jpg",
+            "alt": "Portrait of Athan"
+          },
           "email": "athanc@uw.edu",
           "linkedin": "https://www.linkedin.com/in/athan-cheng/",
           "bio": "Athan keeps projects on track and grounded in data, combining project management with business intelligence in SQL, operations and automation, and research methods.",
-          "skills": ["Project management", "Business intelligence (SQL)", "Operations & automation", "Research methods"],
+          "skills": [
+            "Project management",
+            "Business intelligence (SQL)",
+            "Operations & automation",
+            "Research methods"
+          ],
           "experience": [
-            { "title": "Communications Director", "org": "Life Pods" },
-            { "title": "Operations Associate", "org": "CardinalTalent.ai" }
+            {
+              "title": "Communications Director",
+              "org": "Life Pods"
+            },
+            {
+              "title": "Operations Associate",
+              "org": "CardinalTalent.ai"
+            }
           ],
           "links": [
             {
@@ -73,14 +104,28 @@
         {
           "name": "Cannon",
           "role": "Product design & front-end development",
-          "photo": { "src": "/images/team/cannon.jpg", "alt": "Portrait of Cannon" },
+          "photo": {
+            "src": "/images/team/cannon.jpg",
+            "alt": "Portrait of Cannon"
+          },
           "email": "c4nnkayy@uw.edu",
           "linkedin": "https://www.linkedin.com/in/cannonhurst/",
           "bio": "Cannon designs products from 0 to 1 and builds them, working across design systems, rapid prototypes and MVPs, and front-end code.",
-          "skills": ["0–1 product design", "Design systems", "Front-end development", "Rapid prototyping & MVPs"],
+          "skills": [
+            "0–1 product design",
+            "Design systems",
+            "Front-end development",
+            "Rapid prototyping & MVPs"
+          ],
           "experience": [
-            { "title": "Product Designer", "org": "Nuts & Bolts AI" },
-            { "title": "Product Designer", "org": "Hugsi" }
+            {
+              "title": "Product Designer",
+              "org": "Nuts & Bolts AI"
+            },
+            {
+              "title": "Product Designer",
+              "org": "Hugsi"
+            }
           ],
           "links": [
             {
@@ -92,14 +137,28 @@
         {
           "name": "Lavender",
           "role": "UX design & web",
-          "photo": { "src": "/images/team/lavender.jpg", "alt": "Portrait of Lavender" },
+          "photo": {
+            "src": "/images/team/lavender.jpg",
+            "alt": "Portrait of Lavender"
+          },
           "email": "hchang42@uw.edu",
           "linkedin": "https://www.linkedin.com/in/lavender-chang/",
           "bio": "Lavender designs clear, accessible web experiences and connects them to marketing, content and analytics in GA4 and Tableau.",
-          "skills": ["UX design", "Web design & accessibility", "Marketing & content", "Data analytics (GA4, Tableau)"],
+          "skills": [
+            "UX design",
+            "Web design & accessibility",
+            "Marketing & content",
+            "Data analytics (GA4, Tableau)"
+          ],
           "experience": [
-            { "title": "UX Designer", "org": "CoMotion at University of Washington" },
-            { "title": "Product Marketing Assistant", "org": "University of Rochester Libraries" }
+            {
+              "title": "UX Designer",
+              "org": "CoMotion at University of Washington"
+            },
+            {
+              "title": "Product Marketing Assistant",
+              "org": "University of Rochester Libraries"
+            }
           ],
           "links": [
             {
